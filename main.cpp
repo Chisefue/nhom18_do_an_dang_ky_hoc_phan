@@ -1,11 +1,7 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-
 int main() {
-    cout << "Chaooo!!!!" << endl;
-
-    
+    cout << "Hello, World!" << endl;
     return 0;
 }
-
