@@ -1,14 +1,17 @@
+#ifndef MODULE3_TRUYXUAT_H
+#define MODULE3_TRUYXUAT_H
+
 #include <iostream>
 #include <vector>
 #include <string>
 
 using namespace std;
 
-// Cấu trúc dữ liệu dùng chung
-struct SinhVien {
+// 1. Class lưu thông tin Sinh viên
+class SinhVien {
+private:
     string mssv;
     string hoTen;
-};
 
 struct LopHocPhan {
     string maLop;
