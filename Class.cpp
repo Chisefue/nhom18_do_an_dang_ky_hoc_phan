@@ -21,6 +21,6 @@ class Student : public Course {
     private : 
         string studentId;
         string studentName;
-        vector<Course> completedCourse; // Key = HocSinh Val = DanhSachDaHocs 
+        vector<Course> completedCourse; 
 };
 
