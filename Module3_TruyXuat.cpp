@@ -1,12 +1,16 @@
 
 #include "Class.h"
 
+// Định nghĩa constructor cho Course
+Course::Course() : courseId(""), courseName(""), schedule("") {}
+
 Course::Course(string maHP, string tenHP, string thoiGian) {
-    CourseID = maHP;
-    CourseName = tenHP;
-    Schedule = thoiGian;
-} 
-// Kiểm tra định dạng: 0 < độ dà i <= 13 và có dạng MaHocPhan_SoThuTuLop
+    courseId = maHP;
+    courseName = tenHP;
+    schedule = thoiGian;
+}
+
+// Kiểm tra định dạng: 0 < độ dài <= 13 và có dạng MaHocPhan_SoThuTuLop
 bool kiemTraDinhDang(string s) {
     if (s.empty() || s.length() > 13) {
         return false;
@@ -27,7 +31,7 @@ bool kiemTraDinhDang(string s) {
     }
 
     return true;
-} 
+}
 
 // Truy xuất danh sách sinh viên theo mã lớp
 void truyXuatDanhSachLop(string s, const vector<Classroom>& danhSachCacLop) {
@@ -38,15 +42,17 @@ void truyXuatDanhSachLop(string s, const vector<Classroom>& danhSachCacLop) {
 
     bool timThay = false;
     for (int i = 0; i < (int)danhSachCacLop.size(); i++) {
-        if (danhSachCacLop[i].CLassID == s) {
+        if (danhSachCacLop[i].getClassId() == s) {
             timThay = true;
             cout << "\n=== DANH SACH SINH VIEN LOP: " << s << " ===\n";
-            if (danhSachCacLop[i].danhSachSV.empty()) {
+            const vector<Student>& ds = danhSachCacLop[i].getStudentList();
+            
+            if (ds.empty()) {
                 cout << "(Lop hoc hien chua co sinh vien nao dang ky)\n";
             } else {
-                for (int j = 0; j < (int)danhSachCacLop[i].danhSachSV.size(); j++) {
-                    cout << j + 1 << ". MSSV: " << danhSachCacLop[i].danhSachSV[j].mssv 
-                         << " | Ho ten: " << danhSachCacLop[i].danhSachSV[j].hoTen << "\n";
+                for (int j = 0; j < (int)ds.size(); j++) {
+                    cout << j + 1 << ". MSSV: " << ds[j].getStudentId() 
+                         << " | Ho ten: " << ds[j].getStudentName() << "\n";
                 }
             }
             break;
