@@ -34,23 +34,25 @@ class Student {
     private:
         string studentId;
         string studentName;
-        Course course;
+        vector<Course> attendingCourse;
         vector<Course> completedCourse;
     public:
         Student() {
             studentId = "NONE";
             studentName = "NONE";
-            course = Course();
-            
         }
-        Student(string studentId, string studentName, Course course) {
+        Student(string studentId, string studentName) {
             this->studentId = studentId;
             this->studentName = studentName;
-            this->course = course;
         }
 
         string getStudentId() const { return studentId; }
         string getStudentName() const { return studentName; }
+        vector<Course> getAttendingCourse() { return attendingCourse; }
+        vector<Course> getCompletedCourse() { return completedCourse; }
+
+        void addAttendingCourse(Course course) { attendingCourse.push_back(course); }
+        void addCompletedCourse(Course course) { completedCourse.push_back(course); }
     };
 
 class Classroom {

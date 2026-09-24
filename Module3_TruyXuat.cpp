@@ -1,14 +1,5 @@
-
 #include "Class.h"
 
-// Định nghĩa constructor cho Course
-Course::Course() : courseId(""), courseName(""), schedule("") {}
-
-Course::Course(string maHP, string tenHP, string thoiGian) {
-    courseId = maHP;
-    courseName = tenHP;
-    schedule = thoiGian;
-}
 
 // Kiểm tra định dạng: 0 < độ dài <= 13 và có dạng MaHocPhan_SoThuTuLop
 bool kiemTraDinhDang(string s) {
@@ -34,18 +25,18 @@ bool kiemTraDinhDang(string s) {
 }
 
 // Truy xuất danh sách sinh viên theo mã lớp
-void truyXuatDanhSachLop(string s, const vector<Classroom>& danhSachCacLop) {
+void truyXuatDanhSachLop(string s, vector<Classroom>& danhSachCacLop) {
     if (!kiemTraDinhDang(s)) {
         cout << "Ma lop khong hop le! (Yeu cau: 0 < do dai <= 13 va co dang MaHocPhan_SoThuTuLop)\n";
         return;
     }
 
     bool timThay = false;
-    for (int i = 0; i < (int)danhSachCacLop.size(); i++) {
+    for (int i = 0; i < danhSachCacLop.size(); i++) {
         if (danhSachCacLop[i].getClassId() == s) {
             timThay = true;
             cout << "\n=== DANH SACH SINH VIEN LOP: " << s << " ===\n";
-            const vector<Student>& ds = danhSachCacLop[i].getStudentList();
+            auto& ds = danhSachCacLop[i].getStudentList();
             
             if (ds.empty()) {
                 cout << "(Lop hoc hien chua co sinh vien nao dang ky)\n";
