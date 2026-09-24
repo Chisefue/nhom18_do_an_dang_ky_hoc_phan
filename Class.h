@@ -14,8 +14,16 @@ class Course {
         string courseName;
         string schedule;
     public:
-        Course();
-        Course(string courseId, string courseName, string schedule);
+        Course() {
+            courseId = "NONE";
+            courseName = "NONE";
+            schedule = "NONE";
+        }
+        Course(string courseId, string courseName, string schedule) {
+            this->courseId = courseId;
+            this->courseName = courseName;
+            this->schedule = schedule;
+        }
 
         string getCourseId() const { return courseId; }
         string getCourseName() const { return courseName; }
@@ -29,8 +37,17 @@ class Student {
         Course course;
         vector<Course> completedCourse;
     public:
-        Student();
-        Student(string studentId, string studentName, Course course);
+        Student() {
+            studentId = "NONE";
+            studentName = "NONE";
+            course = Course();
+            
+        }
+        Student(string studentId, string studentName, Course course) {
+            this->studentId = studentId;
+            this->studentName = studentName;
+            this->course = course;
+        }
 
         string getStudentId() const { return studentId; }
         string getStudentName() const { return studentName; }
@@ -43,11 +60,20 @@ class Classroom {
         vector<Student> studentList;
         int capacity;
     public:
-        Classroom(string classId, string className, int capacity);
+        Classroom() {
+            classId = "NONE";
+            className  = "NONE";
+            capacity = 0;
+        }
+        Classroom(string classId, string className, int capacity) {
+            this->classId = classId;
+            this->className = className;
+            this->capacity = capacity;
+        }
 
         string getClassId() const { return classId; }
         string getClassName() const { return className; }
-        const vector<Student>& getStudentList() const { return studentList; }
+        const vector<Student> getStudentList() { return studentList; }
         void addStudent(const Student& sv) { studentList.push_back(sv); }
     };
 
