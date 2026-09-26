@@ -1,5 +1,5 @@
 #include "Class.h"
-
+#include "Function.h"
 
 // Kiểm tra định dạng: 0 < độ dài <= 13 và có dạng MaHocPhan_SoThuTuLop
 bool kiemTraDinhDang(string s) {
@@ -10,7 +10,7 @@ bool kiemTraDinhDang(string s) {
     int viTriGachDuoi = -1;
     int soDauGachDuoi = 0;
 
-    for (int i = 0; i < (int)s.length(); i++) {
+    for (int i = 0; i < s.length(); i++) {
         if (s[i] == '_') {
             soDauGachDuoi++;
             viTriGachDuoi = i;
@@ -32,6 +32,7 @@ void truyXuatDanhSachLop(string s, vector<Classroom>& danhSachCacLop) {
     }
 
     bool timThay = false;
+    
     for (int i = 0; i < danhSachCacLop.size(); i++) {
         if (danhSachCacLop[i].getClassId() == s) {
             timThay = true;
@@ -41,7 +42,7 @@ void truyXuatDanhSachLop(string s, vector<Classroom>& danhSachCacLop) {
             if (ds.empty()) {
                 cout << "(Lop hoc hien chua co sinh vien nao dang ky)\n";
             } else {
-                for (int j = 0; j < (int)ds.size(); j++) {
+                for (int j = 0; j < ds.size(); j++) {
                     cout << j + 1 << ". MSSV: " << ds[j].getStudentId() 
                          << " | Ho ten: " << ds[j].getStudentName() << "\n";
                 }

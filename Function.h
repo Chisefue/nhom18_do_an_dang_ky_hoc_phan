@@ -1,5 +1,5 @@
 #include "Class.h"
-#ifdef _FUNCTION_H
+#ifndef _FUNCTION_H
 #define _FUNCTION_H
 
 bool kiemTraDinhDang(string s);
