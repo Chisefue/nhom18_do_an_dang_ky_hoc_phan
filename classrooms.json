@@ -1,0 +1,78 @@
+{
+  "classrooms": [
+    {
+      "classId": "MATH143001_01",
+      "className": "V503",
+      "capacity": 70,
+      "studentIds": [
+        "25162028",
+        "25110152",
+        "25110241"
+      ]
+    },
+    {
+      "classId": "GDQP110131_02",
+      "className": "A5-204",
+      "capacity": 73,
+      "studentIds": [
+        "25162028",
+        "25110309"
+      ]
+    },
+    {
+      "classId": "INIT130185_02",
+      "className": "B101",
+      "capacity": 80,
+      "studentIds": [
+        "25162028",
+        "25110309",
+        "25110456"
+      ]
+    },
+    {
+      "classId": "INPR130285_01",
+      "className": "C203",
+      "capacity": 60,
+      "studentIds": [
+        "25110152",
+        "25110241"
+      ]
+    },
+    {
+      "classId": "DSAE230185_02",
+      "className": "A4-102",
+      "capacity": 50,
+      "studentIds": [
+        "25110456"
+      ]
+    },
+    {
+      "classId": "OOPL230185_04",
+      "className": "B205",
+      "capacity": 65,
+      "studentIds": [
+        "25110152",
+        "25110309"
+      ]
+    },
+    {
+      "classId": "DBSY230185_01",
+      "className": "C301",
+      "capacity": 70,
+      "studentIds": [
+        "25162028",
+        "25110241",
+        "25110456"
+      ]
+    },
+    {
+      "classId": "COAR230285_02",
+      "className": "V402",
+      "capacity": 90,
+      "studentIds": [
+        "25110152",
+        "25110456"
+      ]
+    }
+  ]
+}
