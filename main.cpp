@@ -7,7 +7,7 @@ using namespace std;
 using json = nlohmann::json;
 
 int main() {
-    ifstream input("Course.json");
+    ifstream input("input/Course.json");
     if (!input.is_open()) {
         cout << "Lỗi, không thể mở được file Course.json\n";
         return 1;
@@ -27,7 +27,7 @@ int main() {
     }
     cout << "Đã đọc thành công " << courseList.size() << " học phần:\n\n";
 
-    input.open("Student.json");
+    input.open("input/Student.json");
     if (!input.is_open()) {
         cout << "Lỗi, không thể mở được file Student.json\n";
         return 1;
@@ -54,11 +54,9 @@ int main() {
         studentList.push_back(s);
     }
     
-    for (auto& course : studentList[0].getCompletedCourse()) {
-        cout << course.getCourseName() << endl;
-    }
+    
 
-    /* cout << "Đăng nhập: \n";
+    cout << "Đăng nhập: \n";
     cout << "1. Sinh viên.\n";
     cout << "2. Admin.\n";
     int userInput;
@@ -69,6 +67,6 @@ int main() {
             cin >> userInput;
 
         }
-    } */
+    }
     return 0;
 }
