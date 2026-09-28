@@ -6,6 +6,12 @@
 using namespace std;
 using json = nlohmann::json;
 
+Student findStudent(string studentId, vector<Student> studentList) {
+    for (Student student : studentList) {
+        if (student.getStudentId() == studentId) return student;
+    }
+}
+
 int main() {
     ifstream input("input/Course.json");
     if (!input.is_open()) {
@@ -23,6 +29,9 @@ int main() {
         string courseName = item["courseName"];
         string schedule = item["schedule"];
         Course c (courseId, courseName, schedule);
+        for (const auto& prerequisiteCoursesId : item["prerequisiteCoursesId"]) {
+            c.addPrerequisiteCourseId(prerequisiteCoursesId);
+        }
         courseList.push_back(c);
     }
     cout << "Đã đọc thành công " << courseList.size() << " học phần:\n\n";
@@ -54,18 +63,40 @@ int main() {
         studentList.push_back(s);
     }
     
+
+    input.open("input/Classroom.json");
+    if (!input.is_open()) {
+        cout << "Lỗi, không thể mở được file Classroom.json\n";
+    }
     
+    input >> jsonData;
+    input.close();
+
+    for (const auto& item : jsonData["classrooms"]) {
+        string classId = item["classId"];
+        string className = item["className"];
+        int capacity = item["capacity"];
+        Classroom cl(classId, className, capacity);
+        for (const auto& studentId : item["studentIds"]) {
+            for (auto& student : studentList) {
+                if (student.getStudentId() == studentId) cl.addStudent(student);
+            }
+        }
+    }
+
+
 
     cout << "Đăng nhập: \n";
     cout << "1. Sinh viên.\n";
     cout << "2. Admin.\n";
-    int userInput;
+    int userInputInt;
+    string userInputString;
     while (true) {
-        cin >> userInput;
-        if (userInput == 1) {
+        cin >> userInputInt;
+        if (userInputInt == 1) {
             cout << "Nhập mã số sinh viên: \n";
-            cin >> userInput;
-
+            cin >> userInputString;
+            Student student = findStudent(userInputString, studentList);
         }
     }
     return 0;

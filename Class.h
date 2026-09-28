@@ -13,6 +13,7 @@ class Course {
         string courseId;
         string courseName;
         string schedule;
+        vector<string> prerequisiteCourses;
     public:
         Course() {
             courseId = "NONE";
@@ -28,6 +29,9 @@ class Course {
         string getCourseId() const { return courseId; }
         string getCourseName() const { return courseName; }
         string getSchedule() const { return schedule; }
+            //Học phần tiên quyết đang ở dạng string, tức là mã học phần, khi làm nhớ
+            //Lấy học phần dựa vào id, có sẵn vector
+        void addPrerequisiteCourseId (string course) { prerequisiteCourses.push_back(course); }
 };
 
 class Student {
@@ -77,6 +81,5 @@ class Classroom {
         string getClassName() const { return className; }
         const vector<Student> getStudentList() { return studentList; }
         void addStudent(const Student& sv) { studentList.push_back(sv); }
-    };
-
+};
 #endif

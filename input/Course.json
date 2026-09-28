@@ -3,62 +3,74 @@
     {
       "courseId": "GDQP110131_02",
       "courseName": "Giáo dục quốc phòng 1",
-      "schedule": "Thứ 3: 1->4, 8->11"
+      "schedule": "Thứ 3: 1->4, 8->11",
+      "prerequisiteCoursesId": []
     },
     {
       "courseId": "MATH143001_01",
       "courseName": "Đại số tuyến tính và cấu trúc đại số",
-      "schedule": "Thứ 2: 7->11; Thứ 4: 7->10"
+      "schedule": "Thứ 2: 7->11; Thứ 4: 7->10",
+      "prerequisiteCoursesId": ["MATH140101_03"]
     },
     {
       "courseId": "INIT130185_02",
       "courseName": "Nhập môn ngành CNTT",
-      "schedule": "Thứ 4: 1->4; Thứ 5: 7->11"
+      "schedule": "Thứ 4: 1->4; Thứ 5: 7->11",
+      "prerequisiteCoursesId": []
     },
     {
       "courseId": "MATH140101_03",
       "courseName": "Giải tích 1",
-      "schedule": "Thứ 3: 1->3; Thứ 5: 1->3"
+      "schedule": "Thứ 3: 1->3; Thứ 5: 1->3",
+      "prerequisiteCoursesId": []
     },
     {
       "courseId": "INPR130285_01",
       "courseName": "Kỹ thuật lập trình",
-      "schedule": "Thứ 2: 1->4; Thứ 6: 7->9"
+      "schedule": "Thứ 2: 1->4; Thứ 6: 7->9",
+      "prerequisiteCoursesId": ["INIT130185_02"]
     },
     {
       "courseId": "DSAE230185_02",
       "courseName": "Cấu trúc dữ liệu và giải thuật",
-      "schedule": "Thứ 3: 7->10; Thứ 7: 1->4"
+      "schedule": "Thứ 3: 7->10; Thứ 7: 1->4",
+      "prerequisiteCoursesId": ["INPR130285_01"]
     },
     {
       "courseId": "OOPL230185_04",
       "courseName": "Lập trình hướng đối tượng",
-      "schedule": "Thứ 4: 7->10; Thứ 6: 1->4"
+      "schedule": "Thứ 4: 7->10; Thứ 6: 1->4",
+      "prerequisiteCoursesId": ["INPR130285_01"]
     },
     {
       "courseId": "DBSY230185_01",
       "courseName": "Hệ cơ sở dữ liệu",
-      "schedule": "Thứ 5: 7->10; Thứ 7: 7->10"
+      "schedule": "Thứ 5: 7->10; Thứ 7: 7->10",
+      "prerequisiteCoursesId": ["DSAE230185_02"]
     },
     {
       "courseId": "COAR230285_02",
       "courseName": "Kiến trúc máy tính và Hợp ngữ",
-      "schedule": "Thứ 2: 7->9; Thứ 5: 1->3"
+      "schedule": "Thứ 2: 7->9; Thứ 5: 1->3",
+      "prerequisiteCoursesId": ["INIT130185_02"]
     },
     {
       "courseId": "PHYS130102_05",
       "courseName": "Vật lý đại cương",
-      "schedule": "Thứ 6: 7->11"
+      "schedule": "Thứ 6: 7->11",
+      "prerequisiteCoursesId": ["MATH140101_03"]
     },
     {
       "courseId": "LLCT130105_03",
       "courseName": "Triết học Mác - Lênin",
-      "schedule": "Thứ 7: 1->4"
+      "schedule": "Thứ 7: 1->4",
+      "prerequisiteCoursesId": []
     },
     {
       "courseId": "ENGL130137_01",
       "courseName": "Anh văn 1",
-      "schedule": "Thứ 2: 1->4; Thứ 4: 1->3"
+      "schedule": "Thứ 2: 1->4; Thứ 4: 1->3",
+      "prerequisiteCoursesId": []
     }
   ]
 }
