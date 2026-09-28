@@ -1,0 +1,52 @@
+{
+  "students": [
+    {
+      "studentId": "25162028",
+      "studentName": "Ronaldo Bui",
+      "attendingCourses": [
+        "GDQP110131_02"
+      ],
+      "completedCourses": [
+        "MATH143001_01",
+        "INIT130185_02"
+      ]
+    },
+    {
+      "studentId": "25110152",
+      "studentName": "Chieu Dep Trai",
+      "attendingCourses": [
+        "MATH143001_01"
+      ],
+      "completedCourses": []
+    },
+    {
+      "studentId": "25110241",
+      "studentName": "Messi Khoa",
+      "attendingCourses": [
+        "MATH143001_01"
+      ],
+      "completedCourses": []
+    },
+    {
+      "studentId": "25110309",
+      "studentName": "Nguyen Van An",
+      "attendingCourses": [
+        "INIT130185_02",
+        "GDQP110131_02"
+      ],
+      "completedCourses": [
+        "MATH143001_01"
+      ]
+    },
+    {
+      "studentId": "25110456",
+      "studentName": "Tran Thi Binh",
+      "attendingCourses": [
+        "MATH143001_01"
+      ],
+      "completedCourses": [
+        "GDQP110131_02"
+      ]
+    }
+  ]
+}
