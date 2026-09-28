@@ -27,7 +27,7 @@ int main() {
     }
     cout << "Đã đọc thành công " << courseList.size() << " học phần:\n\n";
 
-    ifstream input("Student.json");
+    input.open("Student.json");
     if (!input.is_open()) {
         cout << "Lỗi, không thể mở được file Student.json\n";
         return 1;
@@ -48,14 +48,17 @@ int main() {
         }
         for (const auto& completedCourse : student["completedCourses"]) {
             for (auto& course : courseList) {
-                if (completedCourse == course.getCourseId()) s.addAttendingCourse(course);
+                if (completedCourse == course.getCourseId()) s.addCompletedCourse(course);
             }
         }
         studentList.push_back(s);
     }
     
+    for (auto& course : studentList[0].getCompletedCourse()) {
+        cout << course.getCourseName() << endl;
+    }
 
-    cout << "Đăng nhập: \n";
+    /* cout << "Đăng nhập: \n";
     cout << "1. Sinh viên.\n";
     cout << "2. Admin.\n";
     int userInput;
@@ -66,6 +69,6 @@ int main() {
             cin >> userInput;
 
         }
-    }
+    } */
     return 0;
 }
