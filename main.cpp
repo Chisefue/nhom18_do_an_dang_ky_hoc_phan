@@ -1,7 +1,7 @@
 #include "Class.h"
 #include <fstream>
 #include "Module3_TruyXuat.cpp"
-#include "json.hpp"
+#include "lib/json.hpp"
 
 using namespace std;
 using json = nlohmann::json;
