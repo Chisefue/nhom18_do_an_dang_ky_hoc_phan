@@ -8,6 +8,56 @@
 
 using namespace std;
 
+template <typename T> 
+class DIYVector {
+    private:
+        T* arr;
+        int capacity;
+        int size;
+
+        void expand() {
+            if (capacity == 0) capacity = 1;
+            else capacity = capacity * 2;
+            T* tmp = new T[capacity];
+            for (int i = 0; i < size; i++) {
+                tmp[i] = arr[i];
+            }
+            delete[] arr;
+            arr = tmp;
+        }
+    public: 
+        DIYVector() {
+            arr = nullptr;
+            capacity = 0;
+            size = 0;
+        }
+        ~DIYVector() {
+            delete[] arr;
+        }
+
+        DIYVector(DIYVector& otherVector) { //Sao chep vector
+            capacity = otherVector.capacity;
+            size = otherVector.size;
+            arr = new T[capacity];
+            for (int i = 0; i < size; i++) {
+                arr[i] = otherVector.arr[i];
+            }
+        }
+        const DIYVector& operator=(DIYVector &otherVector) {
+            if (this != &otherVector) {
+                delete[] arr;
+                capacity = otherVector.capacity;
+                size = otherVector.size;
+                arr = new T[capacity];
+                for (int i = 0; i < size; i++) {
+                    arr[i] = otherVector.arr[i];
+                }
+            }
+            return *this;
+        }
+
+};
+
 class Course {
     private:
         string courseId;
