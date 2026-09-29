@@ -5,6 +5,8 @@
 #include <string>
 #include <vector>
 #include <unordered_map>
+#include <set>
+#pragma once
 
 using namespace std;
 
@@ -35,7 +37,7 @@ class Student {
         string studentId;
         string studentName;
         vector<Course> attendingCourse;
-        vector<Course> completedCourse;
+        set <string> completedCourseId;
     public:
         Student() {
             studentId = "NONE";
@@ -49,10 +51,10 @@ class Student {
         string getStudentId() const { return studentId; }
         string getStudentName() const { return studentName; }
         vector<Course> getAttendingCourse() { return attendingCourse; }
-        vector<Course> getCompletedCourse() { return completedCourse; }
+        const set<string>& getCompletedCourseId() const { return completedCourseId; }
 
         void addAttendingCourse(Course course) { attendingCourse.push_back(course); }
-        void addCompletedCourse(Course course) { completedCourse.push_back(course); }
+        void addCompletedCourse(const string& courseId) { completedCourseId.insert(courseId); }
     };
 
 class Classroom {
@@ -78,5 +80,21 @@ class Classroom {
         const vector<Student> getStudentList() { return studentList; }
         void addStudent(const Student& sv) { studentList.push_back(sv); }
     };
+
+struct PrereqResult {
+    bool isEligible;
+    vector<string> missing;
+    string message;
+};
+
+class PrerequisiteService {
+private: 
+    // Đồ thị môn tiên quyết: Mã môn -> Danh sách các môn tiên quyết
+    unordered_map<string, vector<string>> prereqGraph;
+public:
+    PrerequisiteService() = default;
+    void addPrerequisite(const string& targetCourse, const string& prereqCourse);
+    PrereqResult checkEligibility(const string& courseCode, const set<string>& completedCourse) const;
+};
 
 #endif
