@@ -2,6 +2,7 @@
 #include <fstream>
 #include "Module3_TruyXuat.cpp"
 #include "lib/json.hpp"
+#include "Test2.cpp"
 
 using namespace std;
 using json = nlohmann::json;
@@ -85,8 +86,10 @@ int main() {
     }
 
 
+    
+    
 
-    cout << "Đăng nhập: \n";
+    /* cout << "Đăng nhập: \n";
     cout << "1. Sinh viên.\n";
     cout << "2. Admin.\n";
     int userInputInt;
@@ -98,6 +101,6 @@ int main() {
             cin >> userInputString;
             Student student = findStudent(userInputString, studentList);
         }
-    }
+    } */
     return 0;
 }

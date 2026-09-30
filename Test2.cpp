@@ -1,7 +1,8 @@
 #include <iostream>
 #include <vector>
 #include <string>
-
+#include "Class.h"
+#include "Function.h"
 
 using namespace std;
 
@@ -27,7 +28,7 @@ bool isPrefix(const string& S, const string& courseId) {
 // ==========================================
 // Hàm comparator: Trả về true nếu mã học phần a đứng trước b theo bảng chữ cái A-Z
 bool compareCourse(const Course& a, const Course& b) {
-    return a.courseId < b.courseId;
+    return a.getCourseId() < b.getCourseId();
 }
 
 // Hàm chia mảng (Partition) phục vụ cho Quick Sort
@@ -69,7 +70,7 @@ int findFirstMatch(const vector<Course>& arr, const string& S) {
 
     while (left <= right) {
         int mid = left + (right - left) / 2; // Tìm điểm giữa mảng
-        string midId = arr[mid].courseId;
+        string midId = arr[mid].getCourseId();
 
         if (isPrefix(S, midId)) {
             first_pos = mid; // Đã tìm thấy một phần tử khớp!
@@ -93,11 +94,13 @@ int findFirstMatch(const vector<Course>& arr, const string& S) {
 // ==========================================
 // MODULE MAIN: GỌI CÁC HÀM VÀ XỬ LÝ RÀNG BUỘC
 // ==========================================
-void searchCourseModule(vector<Course>& arr, string S) {
+vector<Course> searchCourseModule(vector<Course>& arr, string S) {
+    vector<Course> found;
+    int count = 0;
     // 1. Ràng buộc đầu vào: 0 < S.length() < 10
-    if (S.length() <= 0 || S.length() >= 10) {
+    if (S.length() <= 0 || S.length() > 13) {
         cout << "Thong bao: Khong tim thay hoc phan (Do dai chuoi khong hop le)." << endl;
-        return;
+        return {};
     }
 
     // 2. Phải đảm bảo dữ liệu đã được sắp xếp A-Z trước khi tìm kiếm nhị phân
@@ -115,8 +118,10 @@ void searchCourseModule(vector<Course>& arr, string S) {
         cout << "\nDanh sach cac hoc phan tim thay cho tu khoa '" << S << "':\n";
         // Bắt đầu từ vị trí tìm được, in ra tất cả các học phần có cùng tiền tố S
         for (int i = startIndex; i < arr.size(); i++) {
-            if (isPrefix(S, arr[i].courseId)) {
-                cout << "- " << arr[i].courseId << " : " << arr[i].courseName << endl;
+            if (isPrefix(S, arr[i].getCourseId())) {
+                count++;
+                cout << count << ". " << arr[i].getCourseId() << " " << arr[i].getCourseName() << endl;
+                found.push_back(arr[i]);
             }
             else {
                 // Do mảng đã được sắp xếp, nếu gặp một mã không còn chứa tiền tố S nữa
@@ -124,25 +129,6 @@ void searchCourseModule(vector<Course>& arr, string S) {
                 break;
             }
         }
+        return found;
     }
-}
-
-int main() {
-    // Giả lập mảng dữ liệu động đã được nạp từ file JSON Course.json
-    vector<Course> db = {
-        {"MATH143001_01", "Dai so tuyen tinh va cau truc dai so"},
-        {"INIT130185_02", "Nhap mon nganh CNTT"},
-        {"MATH140101_03", "Giai tich 1"},
-        {"INPR130285_01", "Ky thuat lap trinh"},
-        {"DSAE230185_02", "Cau truc du lieu va giai thuat"},
-        {"OOPL230185_04", "Lap trinh huong doi tuong"}
-    };
-
-    cout << "Nhap ma hoc phan (hoac tien to) can tim: ";
-    string input;
-    getline(cin, input);
-
-    searchCourseModule(db, input);
-
-    return 0;
 }
