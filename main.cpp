@@ -1,9 +1,10 @@
 #include "Class.h"
-#include <fstream>
+#include "Module1_TimKiem.cpp"
+#include "Module2_TienQuyet.cpp"
 #include "Module3_TruyXuat.cpp"
 #include "lib/json.hpp"
-#include "Module1_TimKiem.cpp"
 
+#include <fstream>
 using namespace std;
 using json = nlohmann::json;
 
@@ -58,7 +59,7 @@ int main() {
         }
         for (const auto& completedCourse : student["completedCourses"]) {
             for (auto& course : courseList) {
-                if (completedCourse == course.getCourseId()) s.addCompletedCourse(course);
+                if (completedCourse == course.getCourseId()) s.addCompletedCourseId(course.getCourseId());
             }
         }
         studentList.push_back(s);
@@ -84,8 +85,19 @@ int main() {
             }
         }
     }
+    
 
-
+    
+    /* PrerequisiteService prerequisiteService;
+    for (auto& course : courseList) {
+        string courseId = course.getCourseId().substr(0,10);
+        if (courseId == "PHYS130102") {
+            prerequisiteService.addPrerequisite("PHYS130102", course.getCourseId());
+        }
+    }
+    PrereqResult result = prerequisiteService.checkEligibility("PHYS130102", studentList[1].getCompletedCourseId());
+    cout << result.message;
+     */
     
     
 
@@ -102,5 +114,7 @@ int main() {
             Student student = findStudent(userInputString, studentList);
         }
     } */
+
+
     return 0;
 }

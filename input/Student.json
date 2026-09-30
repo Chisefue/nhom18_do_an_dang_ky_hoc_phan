@@ -4,18 +4,18 @@
       "studentId": "25162028",
       "studentName": "Ronaldo Bui",
       "attendingCourses": [
-        "GDQP110131_02"
+        "GDQP110131"
       ],
       "completedCourses": [
-        "MATH143001_01",
-        "INIT130185_02"
+        "MATH143001",
+        "INIT130185"
       ]
     },
     {
       "studentId": "25110152",
       "studentName": "Chieu Dep Trai",
       "attendingCourses": [
-        "MATH143001_01"
+        "MATH143001"
       ],
       "completedCourses": []
     },
@@ -23,7 +23,7 @@
       "studentId": "25110241",
       "studentName": "Messi Khoa",
       "attendingCourses": [
-        "MATH143001_01"
+        "MATH143001"
       ],
       "completedCourses": []
     },
@@ -31,21 +31,21 @@
       "studentId": "25110309",
       "studentName": "Nguyen Van An",
       "attendingCourses": [
-        "INIT130185_02",
-        "GDQP110131_02"
+        "INIT130185",
+        "GDQP110131"
       ],
       "completedCourses": [
-        "MATH143001_01"
+        "MATH143001"
       ]
     },
     {
       "studentId": "25110456",
       "studentName": "Tran Thi Binh",
       "attendingCourses": [
-        "MATH143001_01"
+        "MATH143001"
       ],
       "completedCourses": [
-        "GDQP110131_02"
+        "GDQP110131"
       ]
     }
   ]

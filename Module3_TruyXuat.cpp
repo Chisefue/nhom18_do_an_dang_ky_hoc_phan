@@ -1,5 +1,4 @@
 #include "Class.h"
-#include "Function.h"
 
 // Kiểm tra định dạng: 0 < độ dài <= 13 và có dạng MaHocPhan_SoThuTuLop
 bool kiemTraDinhDang(string s) {
