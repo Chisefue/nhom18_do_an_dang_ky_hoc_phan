@@ -3,12 +3,12 @@
 
 #include <iostream>
 #include <string>
-#include "vector.cpp"
 #include <unordered_map>
 #include <set>
 #include <sstream>
 #include <algorithm>
-#pragma once
+#include "Vector.h"
+
 
 using namespace std;
 
@@ -19,7 +19,7 @@ class Course {
         string courseId;
         string courseName;
         string schedule;
-        vector<string> prerequisiteCourses;
+        DIYVector<string> prerequisiteCourses; 
     public:
         Course() {
             courseId = "NONE";
@@ -36,7 +36,7 @@ class Course {
         string getCourseName() const { return courseName; }
         string getSchedule() const { return schedule; }
             //Học phần tiên quyết đang ở dạng string, tức là mã học phần, khi làm nhớ
-            //Lấy học phần dựa vào id, có sẵn vector
+            //Lấy học phần dựa vào id, có sẵn DIYVector
         void addPrerequisiteCourseId (string course) { prerequisiteCourses.push_back(course); }
 };
 
@@ -44,7 +44,7 @@ class Student {
     private:
         string studentId;
         string studentName;
-        vector<Course> attendingCourse;
+        DIYVector<Course> attendingCourse;
         set <string> completedCourseId;
     public:
         Student() {
@@ -58,7 +58,7 @@ class Student {
 
         string getStudentId() const { return studentId; }
         string getStudentName() const { return studentName; }
-        vector<Course> getAttendingCourse() { return attendingCourse; }
+        DIYVector<Course> getAttendingCourse() { return attendingCourse; }
         const set<string>& getCompletedCourseId() const { return completedCourseId; }
 
         void addAttendingCourse(Course course) { attendingCourse.push_back(course); }
@@ -69,7 +69,7 @@ class Classroom {
     private:
         string classId;
         string className;
-        vector<Student> studentList;
+        DIYVector<Student> studentList;
         int capacity;
     public:
         Classroom() {
@@ -85,21 +85,21 @@ class Classroom {
 
         string getClassId() const { return classId; }
         string getClassName() const { return className; }
-        const vector<Student> getStudentList() { return studentList; }
+        const DIYVector<Student> getStudentList() { return studentList; }
         void addStudent(const Student& sv) { studentList.push_back(sv); }
 };
 
 
 struct PrereqResult {
     bool isEligible;
-    vector<string> missing;
+    DIYVector<string> missing;
     string message;
 };
 
 class PrerequisiteService {
 private: 
     // Đồ thị môn tiên quyết: Mã môn -> Danh sách các môn tiên quyết
-    unordered_map<string, vector<string>> prereqGraph;
+    unordered_map<string, DIYVector<string>> prereqGraph;
 public:
     PrerequisiteService() = default;
     void addPrerequisite(const string& targetCourse, const string& prereqCourse);

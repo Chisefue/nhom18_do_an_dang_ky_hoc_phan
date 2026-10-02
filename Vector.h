@@ -1,7 +1,9 @@
+#ifndef _DIYVector_H
+#define _DIYVector_H
 #include <stdexcept>
 
 template <typename T> 
-class vector {
+class DIYVector { 
     private:
         T* arr;
         unsigned int capacity;
@@ -18,31 +20,31 @@ class vector {
             arr = tmp;
         }
     public: 
-        vector() {
+        DIYVector() {
             arr = nullptr;
             capacity = 0;
             _size = 0;
         }
-        ~vector() {
+        ~DIYVector() {
             delete[] arr;
         }
 
-        vector(vector& otherVector) { //Sao chep vector
-            capacity = otherVector.capacity;
-            _size = otherVector._size;
+        DIYVector(DIYVector& otherDIYVector) { //Sao chep DIYVector
+            capacity = otherDIYVector.capacity;
+            _size = otherDIYVector._size;
             arr = new T[capacity];
             for (int i = 0; i < _size; i++) {
-                arr[i] = otherVector.arr[i];
+                arr[i] = otherDIYVector.arr[i];
             }
         }
-        const vector& operator=(vector &otherVector) {
-            if (this != &otherVector) {
+        const DIYVector& operator=(DIYVector &otherDIYVector) {
+            if (this != &otherDIYVector) {
                 delete[] arr;
-                capacity = otherVector.capacity;
-                _size = otherVector._size;
+                capacity = otherDIYVector.capacity;
+                _size = otherDIYVector._size;
                 arr = new T[capacity];
                 for (int i = 0; i < _size; i++) {
-                    arr[i] = otherVector.arr[i];
+                    arr[i] = otherDIYVector.arr[i];
                 }
             }
             return *this;
@@ -78,3 +80,5 @@ class vector {
         T* begin() { return arr; }
         T* end() { return arr + _size; }
 };
+
+#endif
