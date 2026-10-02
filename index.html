@@ -1,11 +1,266 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="vi">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Hệ Thống Đăng Ký Học Phần</title>
+    <style>
+        :root {
+            --primary: #0056b3;
+            --bg-color: #f4f7f6;
+            --card-bg: #ffffff;
+            --text-main: #333;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        header {
+            background-color: var(--primary);
+            color: white;
+            width: 100%;
+            padding: 1rem 0;
+            text-align: center;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .container {
+            width: 90%;
+            max-width: 1000px;
+            margin-top: 20px;
+        }
+        .role-toggle {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+        .role-toggle button {
+            padding: 10px 20px;
+            cursor: pointer;
+            border: 1px solid var(--primary);
+            background: white;
+            color: var(--primary);
+            font-size: 16px;
+            transition: 0.3s;
+        }
+        .role-toggle button.active {
+            background: var(--primary);
+            color: white;
+        }
+        .role-toggle button:first-child { border-radius: 5px 0 0 5px; }
+        .role-toggle button:last-child { border-radius: 0 5px 5px 0; }
+        
+        .panel {
+            background: var(--card-bg);
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            display: none;
+        }
+        .panel.active { display: block; }
+        
+        input[type="text"] {
+            padding: 10px;
+            width: calc(100% - 120px);
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        button.action-btn {
+            padding: 10px 15px;
+            background-color: var(--primary);
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        button.action-btn:hover { background-color: #004494; }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 15px;
+        }
+        table, th, td { border: 1px solid #ddd; }
+        th, td { padding: 12px; text-align: left; }
+        th { background-color: #f8f9fa; }
+        .status-msg { margin-top: 15px; font-weight: bold; color: #d9534f; }
+        .success-msg { color: #5cb85c; }
+    </style>
 </head>
 <body>
-    
+
+<header>
+    <h2>Cổng Thông Tin Tín Chỉ</h2>
+</header>
+
+<div class="container">
+    <div class="role-toggle">
+        <button id="btnStudent" class="active" onclick="switchRole('student')">Sinh Viên</button>
+        <button id="btnAdmin" onclick="switchRole('admin')">Quản Trị Viên (Admin)</button>
+    </div>
+
+    <!-- PANEL SINH VIÊN -->
+    <div id="panelStudent" class="panel active">
+        <h3>Đăng Ký Học Phần</h3>
+        <div style="margin-bottom: 15px;">
+            <input type="text" id="searchInput" placeholder="Nhập mã học phần hoặc tên môn (VD: IT001)...">
+            <button class="action-btn" onclick="searchCourse()">Tìm kiếm</button>
+        </div>
+        
+        <div id="studentStatus" class="status-msg"></div>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Mã HP</th>
+                    <th>Tên Môn</th>
+                    <th>Số TC</th>
+                    <th>Lịch Học</th>
+                    <th>Thao Tác</th>
+                </tr>
+            </thead>
+            <tbody id="courseResults">
+                <!-- Dữ liệu từ Module1_TimKiem.cpp sẽ render ở đây -->
+                <tr><td colspan="5" style="text-align:center; color:#777;">Chưa có dữ liệu tìm kiếm</td></tr>
+            </tbody>
+        </table>
+    </div>
+
+    <!-- PANEL ADMIN -->
+    <div id="panelAdmin" class="panel">
+        <h3>Quản Lý Dữ Liệu Lớp</h3>
+        <button class="action-btn" onclick="loadClassData()">Truy Xuất Danh Sách Lớp</button>
+        
+        <div id="adminStatus" class="status-msg"></div>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Mã Lớp</th>
+                    <th>Sĩ Số</th>
+                    <th>Phòng Học</th>
+                    <th>Giảng Viên</th>
+                </tr>
+            </thead>
+            <tbody id="classResults">
+                <!-- Dữ liệu từ Module3_TruyXuat.cpp sẽ render ở đây -->
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<script>
+    const API_BASE_URL = "http://localhost:8080/api"; // Chạy C++ Server ở port 8080
+
+    function switchRole(role) {
+        document.getElementById('btnStudent').classList.remove('active');
+        document.getElementById('btnAdmin').classList.remove('active');
+        document.getElementById('panelStudent').classList.remove('active');
+        document.getElementById('panelAdmin').classList.remove('active');
+
+        if(role === 'student') {
+            document.getElementById('btnStudent').classList.add('active');
+            document.getElementById('panelStudent').classList.add('active');
+        } else {
+            document.getElementById('btnAdmin').classList.add('active');
+            document.getElementById('panelAdmin').classList.add('active');
+        }
+    }
+
+    // GỌI C++: Module1_TimKiem.cpp
+    async function searchCourse() {
+        const keyword = document.getElementById('searchInput').value;
+        const tbody = document.getElementById('courseResults');
+        tbody.innerHTML = '<tr><td colspan="5">Đang tìm kiếm...</td></tr>';
+
+        try {
+            // Frontend gửi request tới Backend C++
+            const response = await fetch(`${API_BASE_URL}/timkiem?q=${keyword}`);
+            const data = await response.json(); // C++ trả về JSON sử dụng json.hpp
+            
+            tbody.innerHTML = '';
+            if(data.length === 0) {
+                tbody.innerHTML = '<tr><td colspan="5">Không tìm thấy học phần.</td></tr>';
+                return;
+            }
+
+            data.forEach(course => {
+                const tr = document.createElement('tr');
+                tr.innerHTML = `
+                    <td>${course.id}</td>
+                    <td>${course.name}</td>
+                    <td>${course.credits}</td>
+                    <td>${course.schedule}</td>
+                    <td><button class="action-btn" onclick="registerCourse('${course.id}')">Đăng ký</button></td>
+                `;
+                tbody.appendChild(tr);
+            });
+        } catch (error) {
+            tbody.innerHTML = `<tr><td colspan="5" class="status-msg">Lỗi kết nối tới Server C++. Hãy đảm bảo file main.exe đang chạy!</td></tr>`;
+        }
+    }
+
+    // GỌI C++: Module2_TienQuyet.cpp & Module4_TrungLich.cpp
+    async function registerCourse(courseId) {
+        const statusDiv = document.getElementById('studentStatus');
+        statusDiv.className = 'status-msg';
+        statusDiv.innerText = 'Đang xử lý đăng ký...';
+
+        const studentId = "25110152"; // ID giả lập của user đăng nhập
+
+        try {
+            const response = await fetch(`${API_BASE_URL}/dangky`, {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ student_id: studentId, course_id: courseId })
+            });
+            const result = await response.json();
+
+            // C++ Backend sẽ kiểm tra Tiên Quyết và Trùng Lịch rồi trả về status
+            if(result.success) {
+                statusDiv.className = 'status-msg success-msg';
+                statusDiv.innerText = `Đăng ký thành công học phần ${courseId}!`;
+            } else {
+                statusDiv.innerText = `Thất bại: ${result.error_message}`; 
+                // Lỗi có thể là "Chưa học môn tiên quyết" hoặc "Trùng lịch học"
+            }
+        } catch (error) {
+            statusDiv.innerText = "Lỗi kết nối server khi đăng ký.";
+        }
+    }
+
+    // GỌI C++: Module3_TruyXuat.cpp
+    async function loadClassData() {
+        const tbody = document.getElementById('classResults');
+        const statusDiv = document.getElementById('adminStatus');
+        tbody.innerHTML = '<tr><td colspan="4">Đang truy xuất dữ liệu từ Classroom.json...</td></tr>';
+
+        try {
+            const response = await fetch(`${API_BASE_URL}/truyxuatlop`);
+            const classes = await response.json();
+            
+            tbody.innerHTML = '';
+            classes.forEach(cls => {
+                const tr = document.createElement('tr');
+                tr.innerHTML = `
+                    <td>${cls.class_id}</td>
+                    <td>${cls.capacity}</td>
+                    <td>${cls.room}</td>
+                    <td>${cls.lecturer}</td>
+                `;
+                tbody.appendChild(tr);
+            });
+        } catch (error) {
+            tbody.innerHTML = '';
+            statusDiv.innerText = "Lỗi kết nối tới Server C++.";
+        }
+    }
+</script>
+
 </body>
 </html>

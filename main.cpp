@@ -1,123 +1,27 @@
-#include "Class.h"
-#include "Module1_TimKiem.cpp"
-#include "Module2_TienQuyet.cpp"
-#include "Module3_TruyXuat.cpp"
-#include "lib/json.hpp"
+#include "httplib.h"
+#include "json.hpp" // File json.hpp trong thư mục lib/ của bạn
 
-#include <fstream>
-using namespace std;
 using json = nlohmann::json;
 
-Student findStudent(string studentId, DIYVector<Student> studentList) {
-    for (Student student : studentList) {
-        if (student.getStudentId() == studentId) return student;
-    }
-    return Student();
-}
-
 int main() {
-    ifstream input("input/Course.json");
-    if (!input.is_open()) {
-        cout << "Lỗi, không thể mở được file Course.json\n";
-        return 1;
-    }
-    json jsonData;
-    input >> jsonData;
-    input.close();
+    httplib::Server svr;
 
-    DIYVector<Course> courseList;
+    // Lắng nghe request GET từ HTML
+    svr.Get("/api/timkiem", [](const httplib::Request& req, httplib::Response& res) {
+        
+        // 1. Logic tìm kiếm môn học của bạn ở đây...
+        json ket_qua = {
+            {{"id", "IT001"}, {"name", "Cấu trúc dữ liệu và giải thuật"}, {"credits", 3}, {"schedule", "Thứ 2, Tiết 1-3"}}
+        };
 
-    for (const auto& item : jsonData["courses"]) {
-        string courseId = item["courseId"];
-        string courseName = item["courseName"];
-        string schedule = item["schedule"];
-        Course c (courseId, courseName, schedule);
-        for (const auto& prerequisiteCoursesId : item["prerequisiteCoursesId"]) {
-            c.addPrerequisiteCourseId(prerequisiteCoursesId);
-        }
-        courseList.push_back(c);
-    }
-    cout << "Đã đọc thành công " << courseList.size() << " học phần:\n\n";
+        // 2. DÒNG QUAN TRỌNG NHẤT ĐỂ SỬA LỖI CORS
+        res.set_header("Access-Control-Allow-Origin", "*");
 
-    input.open("input/Student.json");
-    if (!input.is_open()) {
-        cout << "Lỗi, không thể mở được file Student.json\n";
-        return 1;
-    }
-    input >> jsonData;
-    input.close();
+        // 3. Trả dữ liệu JSON về cho web HTML
+        res.set_content(ket_qua.dump(), "application/json");
+    });
 
-    DIYVector<Student> studentList;
-
-    for (const auto& student : jsonData["students"]) {
-        string studentId = student["studentId"];
-        string studentName = student["studentName"];
-        Student s(studentId, studentName);
-        for (const auto& attendingCourse : student["attendingCourses"]) {
-            for (auto& course : courseList) {
-                if (attendingCourse == course.getCourseId()) s.addAttendingCourse(course);
-            }
-        }
-        for (const auto& completedCourse : student["completedCourses"]) {
-            for (auto& course : courseList) {
-                if (completedCourse == course.getCourseId()) s.addCompletedCourseId(course.getCourseId());
-            }
-        }
-        studentList.push_back(s);
-    }
-    
-
-    input.open("input/Classroom.json");
-    if (!input.is_open()) {
-        cout << "Lỗi, không thể mở được file Classroom.json\n";
-    }
-    
-    input >> jsonData;
-    input.close();
-
-    for (const auto& item : jsonData["classrooms"]) {
-        string classId = item["classId"];
-        string className = item["className"];
-        int capacity = item["capacity"];
-        Classroom cl(classId, className, capacity);
-        for (const auto& studentId : item["studentIds"]) {
-            for (auto& student : studentList) {
-                if (student.getStudentId() == studentId) cl.addStudent(student);
-            }
-        }
-    }
-    
-
-    searchCourseModule(courseList, "MATH143001");
-
-    
-    /* PrerequisiteService prerequisiteService;
-    for (auto& course : courseList) {
-        string courseId = course.getCourseId().substr(0,10);
-        if (courseId == "PHYS130102") {
-            prerequisiteService.addPrerequisite("PHYS130102", course.getCourseId());
-        }
-    }
-    PrereqResult result = prerequisiteService.checkEligibility("PHYS130102", studentList[1].getCompletedCourseId());
-    cout << result.message;
-     */
-    
-    
-
-    /* cout << "Đăng nhập: \n";
-    cout << "1. Sinh viên.\n";
-    cout << "2. Admin.\n";
-    int userInputInt;
-    string userInputString;
-    while (true) {
-        cin >> userInputInt;
-        if (userInputInt == 1) {
-            cout << "Nhập mã số sinh viên: \n";
-            cin >> userInputString;
-            Student student = findStudent(userInputString, studentList);
-        }
-    } */
-
-
+    std::cout << "Server C++ dang chay tai http://localhost:8080..." << std::endl;
+    svr.listen("localhost", 8080);
     return 0;
 }
