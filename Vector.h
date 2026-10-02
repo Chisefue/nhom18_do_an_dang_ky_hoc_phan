@@ -6,13 +6,13 @@ template <typename T>
 class DIYVector { 
     private:
         T* arr;
-        unsigned int capacity;
+        unsigned int _capacity;
         unsigned int _size;
 
         void expand() {
-            if (capacity == 0) capacity = 1;
-            else capacity = capacity * 2;
-            T* tmp = new T[capacity];
+            if (_capacity == 0) _capacity = 1;
+            else _capacity = _capacity * 2;
+            T* tmp = new T[_capacity];
             for (int i = 0; i < _size; i++) {
                 tmp[i] = arr[i];
             }
@@ -22,27 +22,27 @@ class DIYVector {
     public: 
         DIYVector() {
             arr = nullptr;
-            capacity = 0;
+            _capacity = 0;
             _size = 0;
         }
         ~DIYVector() {
             delete[] arr;
         }
 
-        DIYVector(DIYVector& otherDIYVector) { //Sao chep DIYVector
-            capacity = otherDIYVector.capacity;
+        DIYVector(const DIYVector& otherDIYVector) { //Sao chep DIYVector
+            _capacity = otherDIYVector._capacity;
             _size = otherDIYVector._size;
-            arr = new T[capacity];
+            arr = new T[_capacity];
             for (int i = 0; i < _size; i++) {
                 arr[i] = otherDIYVector.arr[i];
             }
         }
-        const DIYVector& operator=(DIYVector &otherDIYVector) {
+        const DIYVector& operator=(const DIYVector &otherDIYVector) {
             if (this != &otherDIYVector) {
                 delete[] arr;
-                capacity = otherDIYVector.capacity;
+                _capacity = otherDIYVector._capacity;
                 _size = otherDIYVector._size;
-                arr = new T[capacity];
+                arr = new T[_capacity];
                 for (int i = 0; i < _size; i++) {
                     arr[i] = otherDIYVector.arr[i];
                 }
@@ -51,7 +51,7 @@ class DIYVector {
         }
 
         void push_back(const T& val) {
-            if (_size >= capacity) {
+            if (_size >= _capacity) {
                 expand();
             }
             arr[_size] = val;
@@ -65,9 +65,13 @@ class DIYVector {
             if (index >= _size) throw std::out_of_range("Phần tử nằm ngoài mảng");
             return arr[index];
         }
+        const T& operator[](unsigned int index) const {
+            if (index >= _size) throw std::out_of_range("Phần tử nằm ngoài mảng");
+            return arr[index];
+        }
 
         unsigned int size() const { return _size; }
-        unsigned int capacity() const { return capacity; }
+        unsigned int capacity() const { return _capacity; }
         bool empty() const { return _size == 0; }
         void clear()     {
             _size = 0;
@@ -75,6 +79,9 @@ class DIYVector {
 
         T* begin() { return arr; }
         T* end() { return arr + _size; }
+
+        const T* begin() const { return arr; }
+        const T* end() const {return arr + _size;}
 };
 
 #endif

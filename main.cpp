@@ -8,10 +8,11 @@
 using namespace std;
 using json = nlohmann::json;
 
-Student findStudent(string studentId, vector<Student> studentList) {
+Student findStudent(string studentId, DIYVector<Student> studentList) {
     for (Student student : studentList) {
         if (student.getStudentId() == studentId) return student;
     }
+    return Student();
 }
 
 int main() {
@@ -24,7 +25,7 @@ int main() {
     input >> jsonData;
     input.close();
 
-    vector<Course> courseList;
+    DIYVector<Course> courseList;
 
     for (const auto& item : jsonData["courses"]) {
         string courseId = item["courseId"];
@@ -46,7 +47,7 @@ int main() {
     input >> jsonData;
     input.close();
 
-    vector<Student> studentList;
+    DIYVector<Student> studentList;
 
     for (const auto& student : jsonData["students"]) {
         string studentId = student["studentId"];
@@ -86,6 +87,8 @@ int main() {
         }
     }
     
+
+    searchCourseModule(courseList, "MATH143001");
 
     
     /* PrerequisiteService prerequisiteService;

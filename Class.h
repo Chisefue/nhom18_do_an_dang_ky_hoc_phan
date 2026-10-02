@@ -8,7 +8,7 @@
 #include <sstream>
 #include <algorithm>
 #include <utility>
-#include <Vector.h>
+#include "Vector.h"
 
 using namespace std;
 
@@ -31,7 +31,6 @@ class Course {
             this->courseName = courseName;
             this->schedule = schedule;
         }
-
         string getCourseId() const { return courseId; }
         string getCourseName() const { return courseName; }
         string getSchedule() const { return schedule; }

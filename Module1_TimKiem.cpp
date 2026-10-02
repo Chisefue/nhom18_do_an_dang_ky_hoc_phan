@@ -36,10 +36,17 @@ int partition(DIYVector<Course>& arr, int low, int high) {
         // Nếu mã học phần hiện tại nhỏ hơn pivot (đứng trước theo A-Z)
         if (compareCourse(arr[j], pivot)) {
             i++;
-            swap(arr[i], arr[j]); // Đổi chỗ đưa phần tử nhỏ hơn về bên trái
+            // Đổi chỗ đưa phần tử nhỏ hơn về bên trái
+            Course tmp = arr[i];
+            arr[i] = arr[j];
+            arr[j] = tmp;
         }
     }
-    swap(arr[i + 1], arr[high]); // Đưa pivot về đúng vị trí ở giữa
+    // Đưa pivot về đúng vị trí ở giữa
+    Course temp = arr[i + 1];
+    arr[i + 1] = arr[high];
+    arr[high] = temp;
+
     return (i + 1); // Trả về vị trí của pivot
 }
 
@@ -125,6 +132,7 @@ DIYVector<Course> searchCourseModule(DIYVector<Course>& arr, string S) {
                 break;
             }
         }
-        return found;
+        
     }
+    return found;
 }
