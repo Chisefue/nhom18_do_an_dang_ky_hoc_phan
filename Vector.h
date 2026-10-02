@@ -2,7 +2,7 @@
 #define _DIYVector_H
 #include <stdexcept>
 
-template <typename T> 
+template <typename T>
 class DIYVector { 
     private:
         T* arr;
@@ -62,10 +62,6 @@ class DIYVector {
         }
 
         T& operator[](unsigned int index) {
-            if (index >= _size) throw std::out_of_range("Phần tử nằm ngoài mảng");
-            return arr[index];
-        }
-        const T& operator[](unsigned int index) const {
             if (index >= _size) throw std::out_of_range("Phần tử nằm ngoài mảng");
             return arr[index];
         }

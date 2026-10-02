@@ -12,7 +12,7 @@ PrereqResult PrerequisiteService::checkEligibility(const string& courseCode, con
         return {true, {}, "Hợp lệ: Môn học không yêu cầu môn tiên quyết."};
     }
 
-    vector<string> missing;
+    DIYVector<string> missing;
     for (const string& req : it->second) {
         if (completedCourse.find(req) == completedCourse.end()) {
             missing.push_back(req);

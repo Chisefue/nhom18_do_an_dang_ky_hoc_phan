@@ -24,7 +24,7 @@ bool kiemTraDinhDang(string s) {
 }
 
 // Truy xuất danh sách sinh viên theo mã lớp
-void truyXuatDanhSachLop(string s, vector<Classroom>& danhSachCacLop) {
+void truyXuatDanhSachLop(string s, DIYVector<Classroom>& danhSachCacLop) {
     if (!kiemTraDinhDang(s)) {
         cout << "Ma lop khong hop le! (Yeu cau: 0 < do dai <= 13 va co dang MaHocPhan_SoThuTuLop)\n";
         return;

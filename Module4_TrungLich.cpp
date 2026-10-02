@@ -11,8 +11,8 @@ struct TimeSlot {
 };
 
 // Hàm hỗ trợ tách chuỗi theo ký tự phân cách
-vector<string> splitString(const string& str, char delimiter) {
-    vector<string> tokens;
+DIYVector<string> splitString(const string& str, char delimiter) {
+    DIYVector<string> tokens;
     stringstream ss(str);
     string token;
     while (getline(ss, token, delimiter)) {
@@ -28,12 +28,12 @@ vector<string> splitString(const string& str, char delimiter) {
 }
 
 // Hàm parse chuỗi schedule thành danh sách TimeSlot
-vector<TimeSlot> parseSchedule(const string& scheduleStr) {
-    vector<TimeSlot> slots;
+DIYVector<TimeSlot> parseSchedule(const string& scheduleStr) {
+    DIYVector<TimeSlot> slots;
     if (scheduleStr == "NONE" || scheduleStr.empty()) return slots;
 
     // Tách các ngày học cách nhau bằng dấu ';'
-    vector<string> daySchedules = splitString(scheduleStr, ';');
+    DIYVector<string> daySchedules = splitString(scheduleStr, ';');
 
     for (const string& daySched : daySchedules) {
         size_t colonPos = daySched.find(':');
@@ -54,7 +54,7 @@ vector<TimeSlot> parseSchedule(const string& scheduleStr) {
 
         // Trích xuất danh sách tiết học (Ví dụ: "1->4, 8->11")
         string periodPart = daySched.substr(colonPos + 1);
-        vector<string> periodRanges = splitString(periodPart, ',');
+        DIYVector<string> periodRanges = splitString(periodPart, ',');
 
         for (const string& range : periodRanges) {
             size_t arrowPos = range.find("->");
@@ -73,7 +73,7 @@ class RegistrationService {
 public:
     // Kiểm tra trùng lịch và tiến hành đăng ký
     // Constraint: 0 < N (đã kiểm tra danh sách không rỗng)
-    static bool registerCourses(Student& student, const vector<Course>& requestedCourses) {
+    static bool registerCourses(Student& student, const DIYVector<Course>& requestedCourses) {
         if (requestedCourses.empty()) {
             cout << "[LỖI] Danh sách môn học đăng ký phải lớn hơn 0 (N > 0)!\n";
             return false;
@@ -88,7 +88,7 @@ public:
 
         // 1. Nạp các môn sinh viên ĐÃ ĐĂNG KÝ TRƯỚC ĐÓ vào ma trận
         for (const Course& existingCourse : student.getAttendingCourse()) {
-            vector<TimeSlot> slots = parseSchedule(existingCourse.getSchedule());
+            DIYVector<TimeSlot> slots = parseSchedule(existingCourse.getSchedule());
             for (const TimeSlot& slot : slots) {
                 for (int p = slot.tietBatDau; p <= slot.tietKetThuc; ++p) {
                     thoiKhoaBieu[slot.thu][p] = true;
@@ -99,7 +99,7 @@ public:
 
         // 2. Kiểm tra danh sách N môn MỚI yêu cầu đăng ký
         for (const Course& newCourse : requestedCourses) {
-            vector<TimeSlot> slots = parseSchedule(newCourse.getSchedule());
+            DIYVector<TimeSlot> slots = parseSchedule(newCourse.getSchedule());
 
             for (const TimeSlot& slot : slots) {
                 for (int p = slot.tietBatDau; p <= slot.tietKetThuc; ++p) {

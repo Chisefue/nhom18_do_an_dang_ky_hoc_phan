@@ -28,7 +28,7 @@ bool compareCourse(const Course& a, const Course& b) {
 }
 
 // Hàm chia mảng (Partition) phục vụ cho Quick Sort
-int partition(vector<Course>& arr, int low, int high) {
+int partition(DIYVector<Course>& arr, int low, int high) {
     Course pivot = arr[high]; // Chọn phần tử cuối làm mốc (pivot)
     int i = (low - 1); // Chỉ số của phần tử nhỏ hơn pivot
 
@@ -44,7 +44,7 @@ int partition(vector<Course>& arr, int low, int high) {
 }
 
 // Hàm Quick Sort đệ quy
-void quickSort(vector<Course>& arr, int low, int high) {
+void quickSort(DIYVector<Course>& arr, int low, int high) {
     if (low < high) {
         // pi là chỉ số chia mảng, arr[pi] đã nằm đúng vị trí
         int pi = partition(arr, low, high);
@@ -59,7 +59,7 @@ void quickSort(vector<Course>& arr, int low, int high) {
 // HÀM 2: THUẬT TOÁN TÌM KIẾM (BINARY SEARCH)
 // ==========================================
 // Tìm vị trí ĐẦU TIÊN khớp hoàn toàn hoặc khớp tiền tố
-int findFirstMatch(const vector<Course>& arr, const string& S) {
+int findFirstMatch(const DIYVector<Course>& arr, const string& S) {
     int left = 0;
     int right = arr.size() - 1;
     int first_pos = -1; // Biến lưu kết quả, mặc định -1 là không tìm thấy
@@ -90,8 +90,8 @@ int findFirstMatch(const vector<Course>& arr, const string& S) {
 // ==========================================
 // MODULE MAIN: GỌI CÁC HÀM VÀ XỬ LÝ RÀNG BUỘC
 // ==========================================
-vector<Course> searchCourseModule(vector<Course>& arr, string S) {
-    vector<Course> found;
+DIYVector<Course> searchCourseModule(DIYVector<Course>& arr, string S) {
+    DIYVector<Course> found;
     int count = 0;
     // 1. Ràng buộc đầu vào: 0 < S.length() < 10
     if (S.length() <= 0 || S.length() > 13) {
