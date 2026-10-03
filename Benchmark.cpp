@@ -37,20 +37,17 @@ void benchmarkVector() {
     cout << " -> Thoi gian them 1,000,000 phan tu: " << duration.count() << " ms\n\n";
 }
 
-// ==========================================
-// 2. BENCHMARK DIYSET (BST)
-// ==========================================
 void benchmarkSet() {
     cout << "[2] Đang test DIYSet (Cây nhị phân) với 100,000 phần tử ngẫu nhiên..." << endl;
     DIYSet<string> mySet;
-    DIYVector<string> trackList; // Lưu lại để test tìm kiếm
+    DIYVector<string> trackList; 
     
     // Sinh 100,000 chuỗi ngẫu nhiên
     for (int i = 0; i < 100000; i++) {
         trackList.push_back(genRandomString(8));
     }
 
-    // Đo thời gian Insert
+    // Insert
     auto start_insert = high_resolution_clock::now();
     for (int i = 0; i < 100000; i++) {
         mySet.insert(trackList[i]);
@@ -59,7 +56,7 @@ void benchmarkSet() {
     auto dur_insert = duration_cast<milliseconds>(stop_insert - start_insert);
     cout << " -> Thoi gian Insert 100,000 phan tu: " << dur_insert.count() << " ms\n";
 
-    // Đo thời gian Find (Tìm 10,000 phần tử có tồn tại)
+    // Find
     auto start_find = high_resolution_clock::now();
     for (int i = 0; i < 10000; i++) {
         mySet.find(trackList[i]);
@@ -69,9 +66,7 @@ void benchmarkSet() {
     cout << " -> Thoi gian Search 10,000 phan tu : " << dur_find.count() << " micro-giay (us)\n\n";
 }
 
-// ==========================================
-// 3. BENCHMARK QUICK SORT & BINARY SEARCH
-// ==========================================
+// QuickSort và binary search
 void benchmarkAlgorithms() {
     cout << "[3] Đang test QuickSort & Binary Search với 100,000 Hoc Phan..." << endl;
     DIYVector<Course> courses;
