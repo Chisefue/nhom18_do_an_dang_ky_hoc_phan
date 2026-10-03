@@ -77,7 +77,7 @@ class DIYSet {
             Node* parr
             Node(T val, Node* parrent = nullptr){
                 data = val;
-                left = nulltpr;
+                left = nullptr;
                 right = nullptr;
                 parr = parrent;
             }
