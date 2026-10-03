@@ -74,7 +74,7 @@ class DIYSet {
             T data;
             Node* left;
             Node* right;
-            Node* parr
+            Node* parr;
             Node(T val, Node* parrent = nullptr){
                 data = val;
                 left = nullptr;
@@ -139,17 +139,20 @@ class DIYSet {
             
             
             while (curr != nullptr) {
-                parr = curr;
+                parent = curr;
                 if (val < curr->data) {
-                    curr = curr->right;
-                } else if (val > curr->data) {
                     curr = curr->left;
+                } else if (val > curr->data) {
+                    curr = curr->right;
                 } else return;
             }
             
-            if (val < parr->val) {
-                parr->next = new Node(val, parr);
+            if (val < parent->data) {
+                parent->left = new Node(val, parent);
+            } else if (val > parent->data) {
+                parent->right = new Node(val, parent);
             }
+            tree_size++;
         }
 
         int count(const T& val) const {
@@ -174,7 +177,7 @@ class DIYSet {
             Node* curr;
         public:
             Iterator(Node* node) {
-                curr(node);
+                curr = node;
             }
 
             // Lấy dữ liệu
@@ -185,6 +188,7 @@ class DIYSet {
             // Toán tử so sánh dừng vòng lặp
             bool operator!=(const Iterator& other) const { return curr != other.curr; }
 
+            bool operator==(const Iterator& other) const { return curr == other.curr; }
             // Duyệt phần tử kế tiếp
             Iterator& operator++() {
                 if (!curr) return *this;
@@ -196,15 +200,16 @@ class DIYSet {
                 } 
                 // Leo lên cha ở trường hợp 2
                 else {
-                    Node* p = curr->parent;
+                    Node* p = curr->parr;
                     while (p != nullptr && curr == p->right) {
                         curr = p;
-                        p = p->parent;
+                        p = p->parr;
                     }
                     curr = p;
                 }
                 return *this;
             }
+
             // Thêm bạn (friend) để truy cập biến private nếu cần thiết
             friend class DIYSet;
         };
@@ -223,16 +228,17 @@ class DIYSet {
             return Iterator(nullptr);
         }
 
-        Iterator find(const T& val) {
+        Iterator find(const T& val) const {
             Node* curr = root;
             while(curr != nullptr) {
                 if (val < curr->data) {
                     curr = curr->left;
                 } else if (val > curr->data) {
                     curr = curr->right;
-                } else Iterator(curr);
+                } else return Iterator(curr);
             }
             return end();
         }
+
 };
 #endif

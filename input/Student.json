@@ -2,11 +2,11 @@
   "students": [
     {
       "attendingCourses": [
+        "GDQP110131",
         "MATH140101",
-        "DSAE230185",
         "NETW230185",
         "ENGL130237",
-        "GDQP110131"
+        "INIT130185"
       ],
       "completedCourses": [
         "ENGL130137",

@@ -6,8 +6,8 @@ template <typename T>
 class DIYVector { 
     private:
         T* arr;
-        unsigned int _capacity;
-        unsigned int _size;
+        int _capacity;
+        int _size;
 
         void expand() {
             if (_capacity == 0) _capacity = 4;
@@ -70,8 +70,8 @@ class DIYVector {
             return arr[index];
         }
 
-        unsigned int size() const { return _size; }
-        unsigned int capacity() const { return _capacity; }
+        int size() const { return _size; }
+        int capacity() const { return _capacity; }
         bool empty() const { return _size == 0; }
         void clear()     {
             _size = 0;

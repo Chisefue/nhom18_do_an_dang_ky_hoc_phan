@@ -29,3 +29,9 @@ PrereqResult PrerequisiteService::checkEligibility(const string& courseCode, con
 
     return {true, {}, "Đủ điều kiện tiên quyết."};
 }
+
+
+int main() {
+    cout << 0;
+    return 0;
+}
