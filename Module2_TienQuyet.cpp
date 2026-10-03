@@ -6,7 +6,7 @@ void PrerequisiteService::addPrerequisite(const string& targetCourse, const stri
     }
 }
 
-PrereqResult PrerequisiteService::checkEligibility(const string& courseCode, const set<string>& completedCourse) const {
+PrereqResult PrerequisiteService::checkEligibility(const string& courseCode, const DIYSet<string>& completedCourse) const {
     auto it = prereqGraph.find(courseCode);
     if (it == prereqGraph.end() || it->second.empty()) {
         return {true, {}, "Hợp lệ: Môn học không yêu cầu môn tiên quyết."};

@@ -10,7 +10,7 @@ class DIYVector {
         unsigned int _size;
 
         void expand() {
-            if (_capacity == 0) _capacity = 1;
+            if (_capacity == 0) _capacity = 4;
             else _capacity = _capacity * 2;
             T* tmp = new T[_capacity];
             for (int i = 0; i < _size; i++) {

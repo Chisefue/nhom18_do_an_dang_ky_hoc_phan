@@ -20,7 +20,7 @@ static PrerequisiteService prereq;
 static mutex mtx;
 
 // ---------- tiện ích ----------
-static string baseId(const string& id) { return id.substr(0, id.find('_')); }
+static string baseId(const string& id) { return id.substr(0, id.find('_')); } // chỉ lấy mã hp
 static string upper(string s) { for (auto& c : s) c = toupper((unsigned char)c); return s; }
 static Student* findStudent(const string& id) { for (unsigned i = 0; i < students.size(); i++) if (students[i].getStudentId() == id) return &students[i]; return nullptr; }
 static Course* findCourse(const string& id) { for (unsigned i = 0; i < courses.size(); i++) if (courses[i].getCourseId() == id) return &courses[i]; return nullptr; }

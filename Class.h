@@ -4,7 +4,7 @@
 #include <iostream>
 #include <string>
 #include <unordered_map>
-#include <set>
+#include "Set.h"
 #include <sstream>
 #include <algorithm>
 #include <utility>
@@ -45,7 +45,7 @@ class Student {
         string studentId;
         string studentName;
         DIYVector<Course> attendingCourse;
-        set <string> completedCourseId;
+        DIYSet<string> completedCourseId;
     public:
         Student() {
             studentId = "NONE";
@@ -59,7 +59,7 @@ class Student {
         string getStudentId() const { return studentId; }
         string getStudentName() const { return studentName; }
         DIYVector<Course> getAttendingCourse() { return attendingCourse; }
-        const set<string>& getCompletedCourseId() const { return completedCourseId; }
+        const DIYSet<string>& getCompletedCourseId() const { return completedCourseId; }
 
         void addAttendingCourse(Course course) { attendingCourse.push_back(course); }
         void addCompletedCourseId(const string& courseId) { completedCourseId.insert(courseId); }
@@ -116,7 +116,7 @@ private:
 public:
     PrerequisiteService() = default;
     void addPrerequisite(const string& targetCourse, const string& prereqCourse);
-    PrereqResult checkEligibility(const string& courseCode, const set<string>& completedCourse) const;
+    PrereqResult checkEligibility(const string& courseCode, const DIYSet<string>& completedCourse) const;
 };
 
 #endif
