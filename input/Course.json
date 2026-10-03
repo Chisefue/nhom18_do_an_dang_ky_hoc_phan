@@ -1,88 +1,3441 @@
 {
   "courses": [
     {
-      "courseId": "GDQP110131_02",
+      "courseId": "GDQP110131_01",
       "courseName": "Giáo dục quốc phòng 1",
-      "schedule": "Thứ 3: 1->4, 8->11",
+      "schedule": "Thứ 4: 1->3",
       "prerequisiteCoursesId": []
     },
     {
-      "courseId": "MATH143001_01",
-      "courseName": "Đại số tuyến tính và cấu trúc đại số",
-      "schedule": "Thứ 2: 7->11; Thứ 4: 7->10",
-      "prerequisiteCoursesId": ["MATH140101"]
+      "courseId": "GDQP110131_02",
+      "courseName": "Giáo dục quốc phòng 1",
+      "schedule": "Thứ 2: 1->4",
+      "prerequisiteCoursesId": []
     },
     {
-      "courseId": "INIT130185_02",
-      "courseName": "Nhập môn ngành CNTT",
-      "schedule": "Thứ 4: 1->4; Thứ 5: 7->11",
+      "courseId": "GDQP110131_03",
+      "courseName": "Giáo dục quốc phòng 1",
+      "schedule": "Thứ 6: 4->6",
+      "prerequisiteCoursesId": []
+    },
+    {
+      "courseId": "GDQP110131_04",
+      "courseName": "Giáo dục quốc phòng 1",
+      "schedule": "Thứ 2: 7->11",
+      "prerequisiteCoursesId": []
+    },
+    {
+      "courseId": "GDQP110131_05",
+      "courseName": "Giáo dục quốc phòng 1",
+      "schedule": "Thứ 4: 1->4",
+      "prerequisiteCoursesId": []
+    },
+    {
+      "courseId": "GDQP110131_06",
+      "courseName": "Giáo dục quốc phòng 1",
+      "schedule": "Thứ 4: 7->11",
+      "prerequisiteCoursesId": []
+    },
+    {
+      "courseId": "GDQP110131_07",
+      "courseName": "Giáo dục quốc phòng 1",
+      "schedule": "Thứ 7: 8->11",
+      "prerequisiteCoursesId": []
+    },
+    {
+      "courseId": "GDQP110131_08",
+      "courseName": "Giáo dục quốc phòng 1",
+      "schedule": "Thứ 6: 1->4",
+      "prerequisiteCoursesId": []
+    },
+    {
+      "courseId": "GDQP110131_09",
+      "courseName": "Giáo dục quốc phòng 1",
+      "schedule": "Thứ 4: 1->5",
+      "prerequisiteCoursesId": []
+    },
+    {
+      "courseId": "GDQP110131_10",
+      "courseName": "Giáo dục quốc phòng 1",
+      "schedule": "Thứ 7: 1->3",
+      "prerequisiteCoursesId": []
+    },
+    {
+      "courseId": "GDQP110131_11",
+      "courseName": "Giáo dục quốc phòng 1",
+      "schedule": "Thứ 6: 7->11",
+      "prerequisiteCoursesId": []
+    },
+    {
+      "courseId": "GDQP110131_12",
+      "courseName": "Giáo dục quốc phòng 1",
+      "schedule": "Thứ 2: 7->11",
+      "prerequisiteCoursesId": []
+    },
+    {
+      "courseId": "GDQP110131_13",
+      "courseName": "Giáo dục quốc phòng 1",
+      "schedule": "Thứ 3: 7->11",
+      "prerequisiteCoursesId": []
+    },
+    {
+      "courseId": "MATH140101_01",
+      "courseName": "Giải tích 1",
+      "schedule": "Thứ 6: 1->3",
+      "prerequisiteCoursesId": []
+    },
+    {
+      "courseId": "MATH140101_02",
+      "courseName": "Giải tích 1",
+      "schedule": "Thứ 3: 1->4",
       "prerequisiteCoursesId": []
     },
     {
       "courseId": "MATH140101_03",
       "courseName": "Giải tích 1",
-      "schedule": "Thứ 3: 1->3; Thứ 5: 1->3",
+      "schedule": "Thứ 6: 8->11",
+      "prerequisiteCoursesId": []
+    },
+    {
+      "courseId": "MATH140101_04",
+      "courseName": "Giải tích 1",
+      "schedule": "Thứ 4: 1->3",
+      "prerequisiteCoursesId": []
+    },
+    {
+      "courseId": "MATH140101_05",
+      "courseName": "Giải tích 1",
+      "schedule": "Thứ 5: 1->3",
+      "prerequisiteCoursesId": []
+    },
+    {
+      "courseId": "MATH140101_06",
+      "courseName": "Giải tích 1",
+      "schedule": "Thứ 6: 1->4",
+      "prerequisiteCoursesId": []
+    },
+    {
+      "courseId": "MATH140101_07",
+      "courseName": "Giải tích 1",
+      "schedule": "Thứ 3: 1->5",
+      "prerequisiteCoursesId": []
+    },
+    {
+      "courseId": "MATH140101_08",
+      "courseName": "Giải tích 1",
+      "schedule": "Thứ 4: 1->5",
+      "prerequisiteCoursesId": []
+    },
+    {
+      "courseId": "MATH140101_09",
+      "courseName": "Giải tích 1",
+      "schedule": "Thứ 2: 8->11",
+      "prerequisiteCoursesId": []
+    },
+    {
+      "courseId": "MATH140101_10",
+      "courseName": "Giải tích 1",
+      "schedule": "Thứ 2: 1->5",
+      "prerequisiteCoursesId": []
+    },
+    {
+      "courseId": "MATH140101_11",
+      "courseName": "Giải tích 1",
+      "schedule": "Thứ 6: 7->9",
+      "prerequisiteCoursesId": []
+    },
+    {
+      "courseId": "MATH140101_12",
+      "courseName": "Giải tích 1",
+      "schedule": "Thứ 6: 1->3",
+      "prerequisiteCoursesId": []
+    },
+    {
+      "courseId": "MATH140101_13",
+      "courseName": "Giải tích 1",
+      "schedule": "Thứ 5: 7->11",
+      "prerequisiteCoursesId": []
+    },
+    {
+      "courseId": "MATH140101_14",
+      "courseName": "Giải tích 1",
+      "schedule": "Thứ 7: 7->11",
+      "prerequisiteCoursesId": []
+    },
+    {
+      "courseId": "MATH143001_01",
+      "courseName": "Đại số tuyến tính và cấu trúc đại số",
+      "schedule": "Thứ 2: 1->3",
+      "prerequisiteCoursesId": [
+        "MATH140101"
+      ]
+    },
+    {
+      "courseId": "MATH143001_02",
+      "courseName": "Đại số tuyến tính và cấu trúc đại số",
+      "schedule": "Thứ 2: 1->3",
+      "prerequisiteCoursesId": [
+        "MATH140101"
+      ]
+    },
+    {
+      "courseId": "MATH143001_03",
+      "courseName": "Đại số tuyến tính và cấu trúc đại số",
+      "schedule": "Thứ 3: 1->3",
+      "prerequisiteCoursesId": [
+        "MATH140101"
+      ]
+    },
+    {
+      "courseId": "MATH143001_04",
+      "courseName": "Đại số tuyến tính và cấu trúc đại số",
+      "schedule": "Thứ 7: 4->6",
+      "prerequisiteCoursesId": [
+        "MATH140101"
+      ]
+    },
+    {
+      "courseId": "MATH143001_05",
+      "courseName": "Đại số tuyến tính và cấu trúc đại số",
+      "schedule": "Thứ 3: 4->6",
+      "prerequisiteCoursesId": [
+        "MATH140101"
+      ]
+    },
+    {
+      "courseId": "MATH143001_06",
+      "courseName": "Đại số tuyến tính và cấu trúc đại số",
+      "schedule": "Thứ 2: 4->6",
+      "prerequisiteCoursesId": [
+        "MATH140101"
+      ]
+    },
+    {
+      "courseId": "MATH143001_07",
+      "courseName": "Đại số tuyến tính và cấu trúc đại số",
+      "schedule": "Thứ 3: 7->11",
+      "prerequisiteCoursesId": [
+        "MATH140101"
+      ]
+    },
+    {
+      "courseId": "MATH143001_08",
+      "courseName": "Đại số tuyến tính và cấu trúc đại số",
+      "schedule": "Thứ 4: 4->6",
+      "prerequisiteCoursesId": [
+        "MATH140101"
+      ]
+    },
+    {
+      "courseId": "MATH143001_09",
+      "courseName": "Đại số tuyến tính và cấu trúc đại số",
+      "schedule": "Thứ 6: 7->11",
+      "prerequisiteCoursesId": [
+        "MATH140101"
+      ]
+    },
+    {
+      "courseId": "MATH143001_10",
+      "courseName": "Đại số tuyến tính và cấu trúc đại số",
+      "schedule": "Thứ 2: 7->9",
+      "prerequisiteCoursesId": [
+        "MATH140101"
+      ]
+    },
+    {
+      "courseId": "MATH143001_11",
+      "courseName": "Đại số tuyến tính và cấu trúc đại số",
+      "schedule": "Thứ 2: 7->11",
+      "prerequisiteCoursesId": [
+        "MATH140101"
+      ]
+    },
+    {
+      "courseId": "MATH143001_12",
+      "courseName": "Đại số tuyến tính và cấu trúc đại số",
+      "schedule": "Thứ 5: 8->11",
+      "prerequisiteCoursesId": [
+        "MATH140101"
+      ]
+    },
+    {
+      "courseId": "MATH143001_13",
+      "courseName": "Đại số tuyến tính và cấu trúc đại số",
+      "schedule": "Thứ 3: 7->11",
+      "prerequisiteCoursesId": [
+        "MATH140101"
+      ]
+    },
+    {
+      "courseId": "INIT130185_01",
+      "courseName": "Nhập môn ngành CNTT",
+      "schedule": "Thứ 5: 1->5",
+      "prerequisiteCoursesId": []
+    },
+    {
+      "courseId": "INIT130185_02",
+      "courseName": "Nhập môn ngành CNTT",
+      "schedule": "Thứ 2: 4->6",
+      "prerequisiteCoursesId": []
+    },
+    {
+      "courseId": "INIT130185_03",
+      "courseName": "Nhập môn ngành CNTT",
+      "schedule": "Thứ 4: 1->5",
+      "prerequisiteCoursesId": []
+    },
+    {
+      "courseId": "INIT130185_04",
+      "courseName": "Nhập môn ngành CNTT",
+      "schedule": "Thứ 7: 7->9",
+      "prerequisiteCoursesId": []
+    },
+    {
+      "courseId": "INIT130185_05",
+      "courseName": "Nhập môn ngành CNTT",
+      "schedule": "Thứ 3: 7->11",
+      "prerequisiteCoursesId": []
+    },
+    {
+      "courseId": "INIT130185_06",
+      "courseName": "Nhập môn ngành CNTT",
+      "schedule": "Thứ 2: 7->11",
+      "prerequisiteCoursesId": []
+    },
+    {
+      "courseId": "INIT130185_07",
+      "courseName": "Nhập môn ngành CNTT",
+      "schedule": "Thứ 4: 1->4",
+      "prerequisiteCoursesId": []
+    },
+    {
+      "courseId": "INIT130185_08",
+      "courseName": "Nhập môn ngành CNTT",
+      "schedule": "Thứ 5: 7->11",
+      "prerequisiteCoursesId": []
+    },
+    {
+      "courseId": "INIT130185_09",
+      "courseName": "Nhập môn ngành CNTT",
+      "schedule": "Thứ 5: 8->11",
+      "prerequisiteCoursesId": []
+    },
+    {
+      "courseId": "INIT130185_10",
+      "courseName": "Nhập môn ngành CNTT",
+      "schedule": "Thứ 2: 1->3",
+      "prerequisiteCoursesId": []
+    },
+    {
+      "courseId": "INIT130185_11",
+      "courseName": "Nhập môn ngành CNTT",
+      "schedule": "Thứ 7: 7->11",
+      "prerequisiteCoursesId": []
+    },
+    {
+      "courseId": "INIT130185_12",
+      "courseName": "Nhập môn ngành CNTT",
+      "schedule": "Thứ 4: 1->5",
+      "prerequisiteCoursesId": []
+    },
+    {
+      "courseId": "INIT130185_13",
+      "courseName": "Nhập môn ngành CNTT",
+      "schedule": "Thứ 2: 7->11",
       "prerequisiteCoursesId": []
     },
     {
       "courseId": "INPR130285_01",
       "courseName": "Kỹ thuật lập trình",
-      "schedule": "Thứ 2: 1->4; Thứ 6: 7->9",
-      "prerequisiteCoursesId": ["INIT130185"]
+      "schedule": "Thứ 3: 7->9",
+      "prerequisiteCoursesId": [
+        "INIT130185"
+      ]
+    },
+    {
+      "courseId": "INPR130285_02",
+      "courseName": "Kỹ thuật lập trình",
+      "schedule": "Thứ 4: 1->3",
+      "prerequisiteCoursesId": [
+        "INIT130185"
+      ]
+    },
+    {
+      "courseId": "INPR130285_03",
+      "courseName": "Kỹ thuật lập trình",
+      "schedule": "Thứ 5: 4->6",
+      "prerequisiteCoursesId": [
+        "INIT130185"
+      ]
+    },
+    {
+      "courseId": "INPR130285_04",
+      "courseName": "Kỹ thuật lập trình",
+      "schedule": "Thứ 2: 1->4",
+      "prerequisiteCoursesId": [
+        "INIT130185"
+      ]
+    },
+    {
+      "courseId": "INPR130285_05",
+      "courseName": "Kỹ thuật lập trình",
+      "schedule": "Thứ 7: 7->11",
+      "prerequisiteCoursesId": [
+        "INIT130185"
+      ]
+    },
+    {
+      "courseId": "INPR130285_06",
+      "courseName": "Kỹ thuật lập trình",
+      "schedule": "Thứ 4: 1->5",
+      "prerequisiteCoursesId": [
+        "INIT130185"
+      ]
+    },
+    {
+      "courseId": "INPR130285_07",
+      "courseName": "Kỹ thuật lập trình",
+      "schedule": "Thứ 4: 1->4",
+      "prerequisiteCoursesId": [
+        "INIT130185"
+      ]
+    },
+    {
+      "courseId": "INPR130285_08",
+      "courseName": "Kỹ thuật lập trình",
+      "schedule": "Thứ 3: 1->3",
+      "prerequisiteCoursesId": [
+        "INIT130185"
+      ]
+    },
+    {
+      "courseId": "INPR130285_09",
+      "courseName": "Kỹ thuật lập trình",
+      "schedule": "Thứ 4: 4->6",
+      "prerequisiteCoursesId": [
+        "INIT130185"
+      ]
+    },
+    {
+      "courseId": "INPR130285_10",
+      "courseName": "Kỹ thuật lập trình",
+      "schedule": "Thứ 5: 1->4",
+      "prerequisiteCoursesId": [
+        "INIT130185"
+      ]
+    },
+    {
+      "courseId": "INPR130285_11",
+      "courseName": "Kỹ thuật lập trình",
+      "schedule": "Thứ 4: 1->4",
+      "prerequisiteCoursesId": [
+        "INIT130185"
+      ]
+    },
+    {
+      "courseId": "INPR130285_12",
+      "courseName": "Kỹ thuật lập trình",
+      "schedule": "Thứ 7: 1->4",
+      "prerequisiteCoursesId": [
+        "INIT130185"
+      ]
+    },
+    {
+      "courseId": "INPR130285_13",
+      "courseName": "Kỹ thuật lập trình",
+      "schedule": "Thứ 3: 8->11",
+      "prerequisiteCoursesId": [
+        "INIT130185"
+      ]
+    },
+    {
+      "courseId": "INPR130285_14",
+      "courseName": "Kỹ thuật lập trình",
+      "schedule": "Thứ 7: 1->5",
+      "prerequisiteCoursesId": [
+        "INIT130185"
+      ]
+    },
+    {
+      "courseId": "DSAE230185_01",
+      "courseName": "Cấu trúc dữ liệu và giải thuật",
+      "schedule": "Thứ 5: 1->4",
+      "prerequisiteCoursesId": [
+        "INPR130285"
+      ]
     },
     {
       "courseId": "DSAE230185_02",
       "courseName": "Cấu trúc dữ liệu và giải thuật",
-      "schedule": "Thứ 3: 7->10; Thứ 7: 1->4",
-      "prerequisiteCoursesId": ["INPR130285"]
+      "schedule": "Thứ 3: 1->5",
+      "prerequisiteCoursesId": [
+        "INPR130285"
+      ]
+    },
+    {
+      "courseId": "DSAE230185_03",
+      "courseName": "Cấu trúc dữ liệu và giải thuật",
+      "schedule": "Thứ 2: 8->11",
+      "prerequisiteCoursesId": [
+        "INPR130285"
+      ]
+    },
+    {
+      "courseId": "DSAE230185_04",
+      "courseName": "Cấu trúc dữ liệu và giải thuật",
+      "schedule": "Thứ 2: 7->11",
+      "prerequisiteCoursesId": [
+        "INPR130285"
+      ]
+    },
+    {
+      "courseId": "DSAE230185_05",
+      "courseName": "Cấu trúc dữ liệu và giải thuật",
+      "schedule": "Thứ 4: 7->9",
+      "prerequisiteCoursesId": [
+        "INPR130285"
+      ]
+    },
+    {
+      "courseId": "DSAE230185_06",
+      "courseName": "Cấu trúc dữ liệu và giải thuật",
+      "schedule": "Thứ 2: 1->5",
+      "prerequisiteCoursesId": [
+        "INPR130285"
+      ]
+    },
+    {
+      "courseId": "DSAE230185_07",
+      "courseName": "Cấu trúc dữ liệu và giải thuật",
+      "schedule": "Thứ 4: 1->5",
+      "prerequisiteCoursesId": [
+        "INPR130285"
+      ]
+    },
+    {
+      "courseId": "DSAE230185_08",
+      "courseName": "Cấu trúc dữ liệu và giải thuật",
+      "schedule": "Thứ 3: 7->11",
+      "prerequisiteCoursesId": [
+        "INPR130285"
+      ]
+    },
+    {
+      "courseId": "DSAE230185_09",
+      "courseName": "Cấu trúc dữ liệu và giải thuật",
+      "schedule": "Thứ 4: 1->4",
+      "prerequisiteCoursesId": [
+        "INPR130285"
+      ]
+    },
+    {
+      "courseId": "DSAE230185_10",
+      "courseName": "Cấu trúc dữ liệu và giải thuật",
+      "schedule": "Thứ 5: 1->4",
+      "prerequisiteCoursesId": [
+        "INPR130285"
+      ]
+    },
+    {
+      "courseId": "DSAE230185_11",
+      "courseName": "Cấu trúc dữ liệu và giải thuật",
+      "schedule": "Thứ 5: 8->11",
+      "prerequisiteCoursesId": [
+        "INPR130285"
+      ]
+    },
+    {
+      "courseId": "DSAE230185_12",
+      "courseName": "Cấu trúc dữ liệu và giải thuật",
+      "schedule": "Thứ 3: 8->11",
+      "prerequisiteCoursesId": [
+        "INPR130285"
+      ]
+    },
+    {
+      "courseId": "DSAE230185_13",
+      "courseName": "Cấu trúc dữ liệu và giải thuật",
+      "schedule": "Thứ 4: 1->5",
+      "prerequisiteCoursesId": [
+        "INPR130285"
+      ]
+    },
+    {
+      "courseId": "DSAE230185_14",
+      "courseName": "Cấu trúc dữ liệu và giải thuật",
+      "schedule": "Thứ 6: 8->11",
+      "prerequisiteCoursesId": [
+        "INPR130285"
+      ]
+    },
+    {
+      "courseId": "OOPL230185_01",
+      "courseName": "Lập trình hướng đối tượng",
+      "schedule": "Thứ 5: 1->3",
+      "prerequisiteCoursesId": [
+        "INPR130285"
+      ]
+    },
+    {
+      "courseId": "OOPL230185_02",
+      "courseName": "Lập trình hướng đối tượng",
+      "schedule": "Thứ 4: 7->9",
+      "prerequisiteCoursesId": [
+        "INPR130285"
+      ]
+    },
+    {
+      "courseId": "OOPL230185_03",
+      "courseName": "Lập trình hướng đối tượng",
+      "schedule": "Thứ 6: 1->4",
+      "prerequisiteCoursesId": [
+        "INPR130285"
+      ]
     },
     {
       "courseId": "OOPL230185_04",
       "courseName": "Lập trình hướng đối tượng",
-      "schedule": "Thứ 4: 7->10; Thứ 6: 1->4",
-      "prerequisiteCoursesId": ["INPR130285"]
+      "schedule": "Thứ 4: 7->11",
+      "prerequisiteCoursesId": [
+        "INPR130285"
+      ]
+    },
+    {
+      "courseId": "OOPL230185_05",
+      "courseName": "Lập trình hướng đối tượng",
+      "schedule": "Thứ 5: 4->6",
+      "prerequisiteCoursesId": [
+        "INPR130285"
+      ]
+    },
+    {
+      "courseId": "OOPL230185_06",
+      "courseName": "Lập trình hướng đối tượng",
+      "schedule": "Thứ 3: 7->9",
+      "prerequisiteCoursesId": [
+        "INPR130285"
+      ]
+    },
+    {
+      "courseId": "OOPL230185_07",
+      "courseName": "Lập trình hướng đối tượng",
+      "schedule": "Thứ 2: 8->11",
+      "prerequisiteCoursesId": [
+        "INPR130285"
+      ]
+    },
+    {
+      "courseId": "OOPL230185_08",
+      "courseName": "Lập trình hướng đối tượng",
+      "schedule": "Thứ 6: 1->3",
+      "prerequisiteCoursesId": [
+        "INPR130285"
+      ]
+    },
+    {
+      "courseId": "OOPL230185_09",
+      "courseName": "Lập trình hướng đối tượng",
+      "schedule": "Thứ 2: 8->11",
+      "prerequisiteCoursesId": [
+        "INPR130285"
+      ]
+    },
+    {
+      "courseId": "OOPL230185_10",
+      "courseName": "Lập trình hướng đối tượng",
+      "schedule": "Thứ 3: 7->11",
+      "prerequisiteCoursesId": [
+        "INPR130285"
+      ]
+    },
+    {
+      "courseId": "OOPL230185_11",
+      "courseName": "Lập trình hướng đối tượng",
+      "schedule": "Thứ 4: 1->5",
+      "prerequisiteCoursesId": [
+        "INPR130285"
+      ]
+    },
+    {
+      "courseId": "OOPL230185_12",
+      "courseName": "Lập trình hướng đối tượng",
+      "schedule": "Thứ 6: 7->11",
+      "prerequisiteCoursesId": [
+        "INPR130285"
+      ]
+    },
+    {
+      "courseId": "OOPL230185_13",
+      "courseName": "Lập trình hướng đối tượng",
+      "schedule": "Thứ 2: 4->6",
+      "prerequisiteCoursesId": [
+        "INPR130285"
+      ]
+    },
+    {
+      "courseId": "OOPL230185_14",
+      "courseName": "Lập trình hướng đối tượng",
+      "schedule": "Thứ 4: 7->11",
+      "prerequisiteCoursesId": [
+        "INPR130285"
+      ]
     },
     {
       "courseId": "DBSY230185_01",
       "courseName": "Hệ cơ sở dữ liệu",
-      "schedule": "Thứ 5: 7->10; Thứ 7: 7->10",
-      "prerequisiteCoursesId": ["DSAE230185"]
+      "schedule": "Thứ 4: 1->3",
+      "prerequisiteCoursesId": [
+        "DSAE230185"
+      ]
+    },
+    {
+      "courseId": "DBSY230185_02",
+      "courseName": "Hệ cơ sở dữ liệu",
+      "schedule": "Thứ 7: 4->6",
+      "prerequisiteCoursesId": [
+        "DSAE230185"
+      ]
+    },
+    {
+      "courseId": "DBSY230185_03",
+      "courseName": "Hệ cơ sở dữ liệu",
+      "schedule": "Thứ 7: 1->5",
+      "prerequisiteCoursesId": [
+        "DSAE230185"
+      ]
+    },
+    {
+      "courseId": "DBSY230185_04",
+      "courseName": "Hệ cơ sở dữ liệu",
+      "schedule": "Thứ 5: 8->11",
+      "prerequisiteCoursesId": [
+        "DSAE230185"
+      ]
+    },
+    {
+      "courseId": "DBSY230185_05",
+      "courseName": "Hệ cơ sở dữ liệu",
+      "schedule": "Thứ 3: 7->11",
+      "prerequisiteCoursesId": [
+        "DSAE230185"
+      ]
+    },
+    {
+      "courseId": "DBSY230185_06",
+      "courseName": "Hệ cơ sở dữ liệu",
+      "schedule": "Thứ 7: 1->4",
+      "prerequisiteCoursesId": [
+        "DSAE230185"
+      ]
+    },
+    {
+      "courseId": "DBSY230185_07",
+      "courseName": "Hệ cơ sở dữ liệu",
+      "schedule": "Thứ 4: 7->9",
+      "prerequisiteCoursesId": [
+        "DSAE230185"
+      ]
+    },
+    {
+      "courseId": "DBSY230185_08",
+      "courseName": "Hệ cơ sở dữ liệu",
+      "schedule": "Thứ 3: 8->11",
+      "prerequisiteCoursesId": [
+        "DSAE230185"
+      ]
+    },
+    {
+      "courseId": "DBSY230185_09",
+      "courseName": "Hệ cơ sở dữ liệu",
+      "schedule": "Thứ 4: 4->6",
+      "prerequisiteCoursesId": [
+        "DSAE230185"
+      ]
+    },
+    {
+      "courseId": "DBSY230185_10",
+      "courseName": "Hệ cơ sở dữ liệu",
+      "schedule": "Thứ 3: 7->9",
+      "prerequisiteCoursesId": [
+        "DSAE230185"
+      ]
+    },
+    {
+      "courseId": "DBSY230185_11",
+      "courseName": "Hệ cơ sở dữ liệu",
+      "schedule": "Thứ 2: 1->5",
+      "prerequisiteCoursesId": [
+        "DSAE230185"
+      ]
+    },
+    {
+      "courseId": "DBSY230185_12",
+      "courseName": "Hệ cơ sở dữ liệu",
+      "schedule": "Thứ 5: 7->9",
+      "prerequisiteCoursesId": [
+        "DSAE230185"
+      ]
+    },
+    {
+      "courseId": "DBSY230185_13",
+      "courseName": "Hệ cơ sở dữ liệu",
+      "schedule": "Thứ 6: 4->6",
+      "prerequisiteCoursesId": [
+        "DSAE230185"
+      ]
+    },
+    {
+      "courseId": "DBSY230185_14",
+      "courseName": "Hệ cơ sở dữ liệu",
+      "schedule": "Thứ 5: 1->3",
+      "prerequisiteCoursesId": [
+        "DSAE230185"
+      ]
+    },
+    {
+      "courseId": "COAR230285_01",
+      "courseName": "Kiến trúc máy tính và Hợp ngữ",
+      "schedule": "Thứ 3: 4->6",
+      "prerequisiteCoursesId": [
+        "INIT130185"
+      ]
     },
     {
       "courseId": "COAR230285_02",
       "courseName": "Kiến trúc máy tính và Hợp ngữ",
-      "schedule": "Thứ 2: 7->9; Thứ 5: 1->3",
-      "prerequisiteCoursesId": ["INIT130185"]
+      "schedule": "Thứ 7: 8->11",
+      "prerequisiteCoursesId": [
+        "INIT130185"
+      ]
+    },
+    {
+      "courseId": "COAR230285_03",
+      "courseName": "Kiến trúc máy tính và Hợp ngữ",
+      "schedule": "Thứ 5: 7->11",
+      "prerequisiteCoursesId": [
+        "INIT130185"
+      ]
+    },
+    {
+      "courseId": "COAR230285_04",
+      "courseName": "Kiến trúc máy tính và Hợp ngữ",
+      "schedule": "Thứ 3: 1->5",
+      "prerequisiteCoursesId": [
+        "INIT130185"
+      ]
+    },
+    {
+      "courseId": "COAR230285_05",
+      "courseName": "Kiến trúc máy tính và Hợp ngữ",
+      "schedule": "Thứ 3: 7->11",
+      "prerequisiteCoursesId": [
+        "INIT130185"
+      ]
+    },
+    {
+      "courseId": "COAR230285_06",
+      "courseName": "Kiến trúc máy tính và Hợp ngữ",
+      "schedule": "Thứ 2: 4->6",
+      "prerequisiteCoursesId": [
+        "INIT130185"
+      ]
+    },
+    {
+      "courseId": "COAR230285_07",
+      "courseName": "Kiến trúc máy tính và Hợp ngữ",
+      "schedule": "Thứ 3: 8->11",
+      "prerequisiteCoursesId": [
+        "INIT130185"
+      ]
+    },
+    {
+      "courseId": "COAR230285_08",
+      "courseName": "Kiến trúc máy tính và Hợp ngữ",
+      "schedule": "Thứ 4: 1->5",
+      "prerequisiteCoursesId": [
+        "INIT130185"
+      ]
+    },
+    {
+      "courseId": "COAR230285_09",
+      "courseName": "Kiến trúc máy tính và Hợp ngữ",
+      "schedule": "Thứ 2: 7->11",
+      "prerequisiteCoursesId": [
+        "INIT130185"
+      ]
+    },
+    {
+      "courseId": "COAR230285_10",
+      "courseName": "Kiến trúc máy tính và Hợp ngữ",
+      "schedule": "Thứ 7: 8->11",
+      "prerequisiteCoursesId": [
+        "INIT130185"
+      ]
+    },
+    {
+      "courseId": "COAR230285_11",
+      "courseName": "Kiến trúc máy tính và Hợp ngữ",
+      "schedule": "Thứ 7: 1->3",
+      "prerequisiteCoursesId": [
+        "INIT130185"
+      ]
+    },
+    {
+      "courseId": "COAR230285_12",
+      "courseName": "Kiến trúc máy tính và Hợp ngữ",
+      "schedule": "Thứ 4: 4->6",
+      "prerequisiteCoursesId": [
+        "INIT130185"
+      ]
+    },
+    {
+      "courseId": "COAR230285_13",
+      "courseName": "Kiến trúc máy tính và Hợp ngữ",
+      "schedule": "Thứ 6: 1->5",
+      "prerequisiteCoursesId": [
+        "INIT130185"
+      ]
+    },
+    {
+      "courseId": "PHYS130102_01",
+      "courseName": "Vật lý đại cương",
+      "schedule": "Thứ 7: 4->6",
+      "prerequisiteCoursesId": [
+        "MATH140101"
+      ]
+    },
+    {
+      "courseId": "PHYS130102_02",
+      "courseName": "Vật lý đại cương",
+      "schedule": "Thứ 5: 8->11",
+      "prerequisiteCoursesId": [
+        "MATH140101"
+      ]
+    },
+    {
+      "courseId": "PHYS130102_03",
+      "courseName": "Vật lý đại cương",
+      "schedule": "Thứ 7: 8->11",
+      "prerequisiteCoursesId": [
+        "MATH140101"
+      ]
+    },
+    {
+      "courseId": "PHYS130102_04",
+      "courseName": "Vật lý đại cương",
+      "schedule": "Thứ 2: 1->3",
+      "prerequisiteCoursesId": [
+        "MATH140101"
+      ]
     },
     {
       "courseId": "PHYS130102_05",
       "courseName": "Vật lý đại cương",
-      "schedule": "Thứ 6: 7->11",
-      "prerequisiteCoursesId": ["MATH140101"]
+      "schedule": "Thứ 3: 7->9",
+      "prerequisiteCoursesId": [
+        "MATH140101"
+      ]
+    },
+    {
+      "courseId": "PHYS130102_06",
+      "courseName": "Vật lý đại cương",
+      "schedule": "Thứ 4: 7->11",
+      "prerequisiteCoursesId": [
+        "MATH140101"
+      ]
+    },
+    {
+      "courseId": "PHYS130102_07",
+      "courseName": "Vật lý đại cương",
+      "schedule": "Thứ 6: 1->5",
+      "prerequisiteCoursesId": [
+        "MATH140101"
+      ]
+    },
+    {
+      "courseId": "PHYS130102_08",
+      "courseName": "Vật lý đại cương",
+      "schedule": "Thứ 6: 1->3",
+      "prerequisiteCoursesId": [
+        "MATH140101"
+      ]
+    },
+    {
+      "courseId": "PHYS130102_09",
+      "courseName": "Vật lý đại cương",
+      "schedule": "Thứ 2: 1->5",
+      "prerequisiteCoursesId": [
+        "MATH140101"
+      ]
+    },
+    {
+      "courseId": "PHYS130102_10",
+      "courseName": "Vật lý đại cương",
+      "schedule": "Thứ 7: 4->6",
+      "prerequisiteCoursesId": [
+        "MATH140101"
+      ]
+    },
+    {
+      "courseId": "PHYS130102_11",
+      "courseName": "Vật lý đại cương",
+      "schedule": "Thứ 4: 7->11",
+      "prerequisiteCoursesId": [
+        "MATH140101"
+      ]
+    },
+    {
+      "courseId": "PHYS130102_12",
+      "courseName": "Vật lý đại cương",
+      "schedule": "Thứ 4: 8->11",
+      "prerequisiteCoursesId": [
+        "MATH140101"
+      ]
+    },
+    {
+      "courseId": "PHYS130102_13",
+      "courseName": "Vật lý đại cương",
+      "schedule": "Thứ 2: 7->9",
+      "prerequisiteCoursesId": [
+        "MATH140101"
+      ]
+    },
+    {
+      "courseId": "PHYS130102_14",
+      "courseName": "Vật lý đại cương",
+      "schedule": "Thứ 2: 7->11",
+      "prerequisiteCoursesId": [
+        "MATH140101"
+      ]
+    },
+    {
+      "courseId": "PHYS130102_15",
+      "courseName": "Vật lý đại cương",
+      "schedule": "Thứ 4: 1->4",
+      "prerequisiteCoursesId": [
+        "MATH140101"
+      ]
+    },
+    {
+      "courseId": "LLCT130105_01",
+      "courseName": "Triết học Mác - Lênin",
+      "schedule": "Thứ 2: 7->11",
+      "prerequisiteCoursesId": []
+    },
+    {
+      "courseId": "LLCT130105_02",
+      "courseName": "Triết học Mác - Lênin",
+      "schedule": "Thứ 3: 1->3",
+      "prerequisiteCoursesId": []
     },
     {
       "courseId": "LLCT130105_03",
       "courseName": "Triết học Mác - Lênin",
-      "schedule": "Thứ 7: 1->4",
+      "schedule": "Thứ 6: 1->4",
+      "prerequisiteCoursesId": []
+    },
+    {
+      "courseId": "LLCT130105_04",
+      "courseName": "Triết học Mác - Lênin",
+      "schedule": "Thứ 4: 8->11",
+      "prerequisiteCoursesId": []
+    },
+    {
+      "courseId": "LLCT130105_05",
+      "courseName": "Triết học Mác - Lênin",
+      "schedule": "Thứ 6: 1->4",
+      "prerequisiteCoursesId": []
+    },
+    {
+      "courseId": "LLCT130105_06",
+      "courseName": "Triết học Mác - Lênin",
+      "schedule": "Thứ 7: 7->9",
+      "prerequisiteCoursesId": []
+    },
+    {
+      "courseId": "LLCT130105_07",
+      "courseName": "Triết học Mác - Lênin",
+      "schedule": "Thứ 5: 1->4",
+      "prerequisiteCoursesId": []
+    },
+    {
+      "courseId": "LLCT130105_08",
+      "courseName": "Triết học Mác - Lênin",
+      "schedule": "Thứ 4: 1->4",
+      "prerequisiteCoursesId": []
+    },
+    {
+      "courseId": "LLCT130105_09",
+      "courseName": "Triết học Mác - Lênin",
+      "schedule": "Thứ 6: 7->9",
+      "prerequisiteCoursesId": []
+    },
+    {
+      "courseId": "LLCT130105_10",
+      "courseName": "Triết học Mác - Lênin",
+      "schedule": "Thứ 6: 1->3",
+      "prerequisiteCoursesId": []
+    },
+    {
+      "courseId": "LLCT130105_11",
+      "courseName": "Triết học Mác - Lênin",
+      "schedule": "Thứ 2: 7->11",
+      "prerequisiteCoursesId": []
+    },
+    {
+      "courseId": "LLCT130105_12",
+      "courseName": "Triết học Mác - Lênin",
+      "schedule": "Thứ 2: 1->4",
+      "prerequisiteCoursesId": []
+    },
+    {
+      "courseId": "LLCT130105_13",
+      "courseName": "Triết học Mác - Lênin",
+      "schedule": "Thứ 3: 7->9",
+      "prerequisiteCoursesId": []
+    },
+    {
+      "courseId": "LLCT130105_14",
+      "courseName": "Triết học Mác - Lênin",
+      "schedule": "Thứ 3: 1->5",
       "prerequisiteCoursesId": []
     },
     {
       "courseId": "ENGL130137_01",
       "courseName": "Anh văn 1",
-      "schedule": "Thứ 2: 1->4; Thứ 4: 1->3",
+      "schedule": "Thứ 4: 1->5",
       "prerequisiteCoursesId": []
     },
     {
       "courseId": "ENGL130137_02",
       "courseName": "Anh văn 1",
-      "schedule": "Thứ 3: 1->4; Thứ 5: 1->3",
+      "schedule": "Thứ 7: 8->11",
       "prerequisiteCoursesId": []
     },
     {
       "courseId": "ENGL130137_03",
       "courseName": "Anh văn 1",
-      "schedule": "Thứ 4: 1->4; Thứ 6: 1->3",
+      "schedule": "Thứ 4: 1->3",
       "prerequisiteCoursesId": []
+    },
+    {
+      "courseId": "ENGL130137_04",
+      "courseName": "Anh văn 1",
+      "schedule": "Thứ 7: 7->9",
+      "prerequisiteCoursesId": []
+    },
+    {
+      "courseId": "ENGL130137_05",
+      "courseName": "Anh văn 1",
+      "schedule": "Thứ 3: 7->9",
+      "prerequisiteCoursesId": []
+    },
+    {
+      "courseId": "ENGL130137_06",
+      "courseName": "Anh văn 1",
+      "schedule": "Thứ 7: 7->11",
+      "prerequisiteCoursesId": []
+    },
+    {
+      "courseId": "ENGL130137_07",
+      "courseName": "Anh văn 1",
+      "schedule": "Thứ 4: 7->9",
+      "prerequisiteCoursesId": []
+    },
+    {
+      "courseId": "ENGL130137_08",
+      "courseName": "Anh văn 1",
+      "schedule": "Thứ 2: 7->11",
+      "prerequisiteCoursesId": []
+    },
+    {
+      "courseId": "ENGL130137_09",
+      "courseName": "Anh văn 1",
+      "schedule": "Thứ 4: 1->4",
+      "prerequisiteCoursesId": []
+    },
+    {
+      "courseId": "ENGL130137_10",
+      "courseName": "Anh văn 1",
+      "schedule": "Thứ 5: 7->9",
+      "prerequisiteCoursesId": []
+    },
+    {
+      "courseId": "ENGL130137_11",
+      "courseName": "Anh văn 1",
+      "schedule": "Thứ 2: 4->6",
+      "prerequisiteCoursesId": []
+    },
+    {
+      "courseId": "ENGL130137_12",
+      "courseName": "Anh văn 1",
+      "schedule": "Thứ 3: 7->9",
+      "prerequisiteCoursesId": []
+    },
+    {
+      "courseId": "ENGL130137_13",
+      "courseName": "Anh văn 1",
+      "schedule": "Thứ 5: 8->11",
+      "prerequisiteCoursesId": []
+    },
+    {
+      "courseId": "NETW230185_01",
+      "courseName": "Mạng máy tính",
+      "schedule": "Thứ 3: 7->11",
+      "prerequisiteCoursesId": [
+        "INIT130185"
+      ]
+    },
+    {
+      "courseId": "NETW230185_02",
+      "courseName": "Mạng máy tính",
+      "schedule": "Thứ 5: 7->11",
+      "prerequisiteCoursesId": [
+        "INIT130185"
+      ]
+    },
+    {
+      "courseId": "NETW230185_03",
+      "courseName": "Mạng máy tính",
+      "schedule": "Thứ 7: 1->4",
+      "prerequisiteCoursesId": [
+        "INIT130185"
+      ]
+    },
+    {
+      "courseId": "NETW230185_04",
+      "courseName": "Mạng máy tính",
+      "schedule": "Thứ 6: 1->5",
+      "prerequisiteCoursesId": [
+        "INIT130185"
+      ]
+    },
+    {
+      "courseId": "NETW230185_05",
+      "courseName": "Mạng máy tính",
+      "schedule": "Thứ 6: 1->5",
+      "prerequisiteCoursesId": [
+        "INIT130185"
+      ]
+    },
+    {
+      "courseId": "NETW230185_06",
+      "courseName": "Mạng máy tính",
+      "schedule": "Thứ 6: 4->6",
+      "prerequisiteCoursesId": [
+        "INIT130185"
+      ]
+    },
+    {
+      "courseId": "NETW230185_07",
+      "courseName": "Mạng máy tính",
+      "schedule": "Thứ 2: 1->3",
+      "prerequisiteCoursesId": [
+        "INIT130185"
+      ]
+    },
+    {
+      "courseId": "NETW230185_08",
+      "courseName": "Mạng máy tính",
+      "schedule": "Thứ 7: 4->6",
+      "prerequisiteCoursesId": [
+        "INIT130185"
+      ]
+    },
+    {
+      "courseId": "NETW230185_09",
+      "courseName": "Mạng máy tính",
+      "schedule": "Thứ 3: 1->3",
+      "prerequisiteCoursesId": [
+        "INIT130185"
+      ]
+    },
+    {
+      "courseId": "NETW230185_10",
+      "courseName": "Mạng máy tính",
+      "schedule": "Thứ 6: 8->11",
+      "prerequisiteCoursesId": [
+        "INIT130185"
+      ]
+    },
+    {
+      "courseId": "NETW230185_11",
+      "courseName": "Mạng máy tính",
+      "schedule": "Thứ 2: 4->6",
+      "prerequisiteCoursesId": [
+        "INIT130185"
+      ]
+    },
+    {
+      "courseId": "NETW230185_12",
+      "courseName": "Mạng máy tính",
+      "schedule": "Thứ 6: 1->4",
+      "prerequisiteCoursesId": [
+        "INIT130185"
+      ]
+    },
+    {
+      "courseId": "NETW230185_13",
+      "courseName": "Mạng máy tính",
+      "schedule": "Thứ 6: 1->5",
+      "prerequisiteCoursesId": [
+        "INIT130185"
+      ]
+    },
+    {
+      "courseId": "NETW230185_14",
+      "courseName": "Mạng máy tính",
+      "schedule": "Thứ 3: 4->6",
+      "prerequisiteCoursesId": [
+        "INIT130185"
+      ]
+    },
+    {
+      "courseId": "OSYS230285_01",
+      "courseName": "Hệ điều hành",
+      "schedule": "Thứ 2: 7->11",
+      "prerequisiteCoursesId": [
+        "COAR230285"
+      ]
+    },
+    {
+      "courseId": "OSYS230285_02",
+      "courseName": "Hệ điều hành",
+      "schedule": "Thứ 5: 1->3",
+      "prerequisiteCoursesId": [
+        "COAR230285"
+      ]
+    },
+    {
+      "courseId": "OSYS230285_03",
+      "courseName": "Hệ điều hành",
+      "schedule": "Thứ 2: 1->3",
+      "prerequisiteCoursesId": [
+        "COAR230285"
+      ]
+    },
+    {
+      "courseId": "OSYS230285_04",
+      "courseName": "Hệ điều hành",
+      "schedule": "Thứ 2: 7->9",
+      "prerequisiteCoursesId": [
+        "COAR230285"
+      ]
+    },
+    {
+      "courseId": "OSYS230285_05",
+      "courseName": "Hệ điều hành",
+      "schedule": "Thứ 6: 7->9",
+      "prerequisiteCoursesId": [
+        "COAR230285"
+      ]
+    },
+    {
+      "courseId": "OSYS230285_06",
+      "courseName": "Hệ điều hành",
+      "schedule": "Thứ 4: 8->11",
+      "prerequisiteCoursesId": [
+        "COAR230285"
+      ]
+    },
+    {
+      "courseId": "OSYS230285_07",
+      "courseName": "Hệ điều hành",
+      "schedule": "Thứ 6: 1->3",
+      "prerequisiteCoursesId": [
+        "COAR230285"
+      ]
+    },
+    {
+      "courseId": "OSYS230285_08",
+      "courseName": "Hệ điều hành",
+      "schedule": "Thứ 6: 7->11",
+      "prerequisiteCoursesId": [
+        "COAR230285"
+      ]
+    },
+    {
+      "courseId": "OSYS230285_09",
+      "courseName": "Hệ điều hành",
+      "schedule": "Thứ 4: 8->11",
+      "prerequisiteCoursesId": [
+        "COAR230285"
+      ]
+    },
+    {
+      "courseId": "OSYS230285_10",
+      "courseName": "Hệ điều hành",
+      "schedule": "Thứ 7: 1->3",
+      "prerequisiteCoursesId": [
+        "COAR230285"
+      ]
+    },
+    {
+      "courseId": "OSYS230285_11",
+      "courseName": "Hệ điều hành",
+      "schedule": "Thứ 4: 7->9",
+      "prerequisiteCoursesId": [
+        "COAR230285"
+      ]
+    },
+    {
+      "courseId": "OSYS230285_12",
+      "courseName": "Hệ điều hành",
+      "schedule": "Thứ 7: 4->6",
+      "prerequisiteCoursesId": [
+        "COAR230285"
+      ]
+    },
+    {
+      "courseId": "OSYS230285_13",
+      "courseName": "Hệ điều hành",
+      "schedule": "Thứ 7: 1->5",
+      "prerequisiteCoursesId": [
+        "COAR230285"
+      ]
+    },
+    {
+      "courseId": "OSYS230285_14",
+      "courseName": "Hệ điều hành",
+      "schedule": "Thứ 2: 1->4",
+      "prerequisiteCoursesId": [
+        "COAR230285"
+      ]
+    },
+    {
+      "courseId": "MATH140201_01",
+      "courseName": "Toán rời rạc",
+      "schedule": "Thứ 4: 7->9",
+      "prerequisiteCoursesId": [
+        "MATH140101"
+      ]
+    },
+    {
+      "courseId": "MATH140201_02",
+      "courseName": "Toán rời rạc",
+      "schedule": "Thứ 7: 4->6",
+      "prerequisiteCoursesId": [
+        "MATH140101"
+      ]
+    },
+    {
+      "courseId": "MATH140201_03",
+      "courseName": "Toán rời rạc",
+      "schedule": "Thứ 3: 7->11",
+      "prerequisiteCoursesId": [
+        "MATH140101"
+      ]
+    },
+    {
+      "courseId": "MATH140201_04",
+      "courseName": "Toán rời rạc",
+      "schedule": "Thứ 3: 1->3",
+      "prerequisiteCoursesId": [
+        "MATH140101"
+      ]
+    },
+    {
+      "courseId": "MATH140201_05",
+      "courseName": "Toán rời rạc",
+      "schedule": "Thứ 3: 7->11",
+      "prerequisiteCoursesId": [
+        "MATH140101"
+      ]
+    },
+    {
+      "courseId": "MATH140201_06",
+      "courseName": "Toán rời rạc",
+      "schedule": "Thứ 4: 1->5",
+      "prerequisiteCoursesId": [
+        "MATH140101"
+      ]
+    },
+    {
+      "courseId": "MATH140201_07",
+      "courseName": "Toán rời rạc",
+      "schedule": "Thứ 6: 1->5",
+      "prerequisiteCoursesId": [
+        "MATH140101"
+      ]
+    },
+    {
+      "courseId": "MATH140201_08",
+      "courseName": "Toán rời rạc",
+      "schedule": "Thứ 5: 8->11",
+      "prerequisiteCoursesId": [
+        "MATH140101"
+      ]
+    },
+    {
+      "courseId": "MATH140201_09",
+      "courseName": "Toán rời rạc",
+      "schedule": "Thứ 4: 4->6",
+      "prerequisiteCoursesId": [
+        "MATH140101"
+      ]
+    },
+    {
+      "courseId": "MATH140201_10",
+      "courseName": "Toán rời rạc",
+      "schedule": "Thứ 6: 7->9",
+      "prerequisiteCoursesId": [
+        "MATH140101"
+      ]
+    },
+    {
+      "courseId": "MATH140201_11",
+      "courseName": "Toán rời rạc",
+      "schedule": "Thứ 6: 1->4",
+      "prerequisiteCoursesId": [
+        "MATH140101"
+      ]
+    },
+    {
+      "courseId": "MATH140201_12",
+      "courseName": "Toán rời rạc",
+      "schedule": "Thứ 4: 4->6",
+      "prerequisiteCoursesId": [
+        "MATH140101"
+      ]
+    },
+    {
+      "courseId": "MATH140201_13",
+      "courseName": "Toán rời rạc",
+      "schedule": "Thứ 7: 7->11",
+      "prerequisiteCoursesId": [
+        "MATH140101"
+      ]
+    },
+    {
+      "courseId": "MATH140201_14",
+      "courseName": "Toán rời rạc",
+      "schedule": "Thứ 7: 7->9",
+      "prerequisiteCoursesId": [
+        "MATH140101"
+      ]
+    },
+    {
+      "courseId": "SADT330185_01",
+      "courseName": "Phân tích thiết kế hệ thống",
+      "schedule": "Thứ 3: 7->9",
+      "prerequisiteCoursesId": [
+        "DBSY230185"
+      ]
+    },
+    {
+      "courseId": "SADT330185_02",
+      "courseName": "Phân tích thiết kế hệ thống",
+      "schedule": "Thứ 3: 4->6",
+      "prerequisiteCoursesId": [
+        "DBSY230185"
+      ]
+    },
+    {
+      "courseId": "SADT330185_03",
+      "courseName": "Phân tích thiết kế hệ thống",
+      "schedule": "Thứ 2: 4->6",
+      "prerequisiteCoursesId": [
+        "DBSY230185"
+      ]
+    },
+    {
+      "courseId": "SADT330185_04",
+      "courseName": "Phân tích thiết kế hệ thống",
+      "schedule": "Thứ 6: 1->5",
+      "prerequisiteCoursesId": [
+        "DBSY230185"
+      ]
+    },
+    {
+      "courseId": "SADT330185_05",
+      "courseName": "Phân tích thiết kế hệ thống",
+      "schedule": "Thứ 7: 7->9",
+      "prerequisiteCoursesId": [
+        "DBSY230185"
+      ]
+    },
+    {
+      "courseId": "SADT330185_06",
+      "courseName": "Phân tích thiết kế hệ thống",
+      "schedule": "Thứ 4: 1->5",
+      "prerequisiteCoursesId": [
+        "DBSY230185"
+      ]
+    },
+    {
+      "courseId": "SADT330185_07",
+      "courseName": "Phân tích thiết kế hệ thống",
+      "schedule": "Thứ 3: 1->5",
+      "prerequisiteCoursesId": [
+        "DBSY230185"
+      ]
+    },
+    {
+      "courseId": "SADT330185_08",
+      "courseName": "Phân tích thiết kế hệ thống",
+      "schedule": "Thứ 6: 8->11",
+      "prerequisiteCoursesId": [
+        "DBSY230185"
+      ]
+    },
+    {
+      "courseId": "SADT330185_09",
+      "courseName": "Phân tích thiết kế hệ thống",
+      "schedule": "Thứ 6: 8->11",
+      "prerequisiteCoursesId": [
+        "DBSY230185"
+      ]
+    },
+    {
+      "courseId": "SADT330185_10",
+      "courseName": "Phân tích thiết kế hệ thống",
+      "schedule": "Thứ 4: 7->11",
+      "prerequisiteCoursesId": [
+        "DBSY230185"
+      ]
+    },
+    {
+      "courseId": "SADT330185_11",
+      "courseName": "Phân tích thiết kế hệ thống",
+      "schedule": "Thứ 6: 1->3",
+      "prerequisiteCoursesId": [
+        "DBSY230185"
+      ]
+    },
+    {
+      "courseId": "SADT330185_12",
+      "courseName": "Phân tích thiết kế hệ thống",
+      "schedule": "Thứ 3: 7->9",
+      "prerequisiteCoursesId": [
+        "DBSY230185"
+      ]
+    },
+    {
+      "courseId": "SADT330185_13",
+      "courseName": "Phân tích thiết kế hệ thống",
+      "schedule": "Thứ 4: 1->3",
+      "prerequisiteCoursesId": [
+        "DBSY230185"
+      ]
+    },
+    {
+      "courseId": "SADT330185_14",
+      "courseName": "Phân tích thiết kế hệ thống",
+      "schedule": "Thứ 6: 7->11",
+      "prerequisiteCoursesId": [
+        "DBSY230185"
+      ]
+    },
+    {
+      "courseId": "SENG330285_01",
+      "courseName": "Công nghệ phần mềm",
+      "schedule": "Thứ 5: 1->3",
+      "prerequisiteCoursesId": [
+        "OOPL230185",
+        "DBSY230185"
+      ]
+    },
+    {
+      "courseId": "SENG330285_02",
+      "courseName": "Công nghệ phần mềm",
+      "schedule": "Thứ 2: 7->11",
+      "prerequisiteCoursesId": [
+        "OOPL230185",
+        "DBSY230185"
+      ]
+    },
+    {
+      "courseId": "SENG330285_03",
+      "courseName": "Công nghệ phần mềm",
+      "schedule": "Thứ 5: 1->5",
+      "prerequisiteCoursesId": [
+        "OOPL230185",
+        "DBSY230185"
+      ]
+    },
+    {
+      "courseId": "SENG330285_04",
+      "courseName": "Công nghệ phần mềm",
+      "schedule": "Thứ 6: 4->6",
+      "prerequisiteCoursesId": [
+        "OOPL230185",
+        "DBSY230185"
+      ]
+    },
+    {
+      "courseId": "SENG330285_05",
+      "courseName": "Công nghệ phần mềm",
+      "schedule": "Thứ 3: 4->6",
+      "prerequisiteCoursesId": [
+        "OOPL230185",
+        "DBSY230185"
+      ]
+    },
+    {
+      "courseId": "SENG330285_06",
+      "courseName": "Công nghệ phần mềm",
+      "schedule": "Thứ 3: 1->5",
+      "prerequisiteCoursesId": [
+        "OOPL230185",
+        "DBSY230185"
+      ]
+    },
+    {
+      "courseId": "SENG330285_07",
+      "courseName": "Công nghệ phần mềm",
+      "schedule": "Thứ 4: 1->4",
+      "prerequisiteCoursesId": [
+        "OOPL230185",
+        "DBSY230185"
+      ]
+    },
+    {
+      "courseId": "SENG330285_08",
+      "courseName": "Công nghệ phần mềm",
+      "schedule": "Thứ 3: 1->3",
+      "prerequisiteCoursesId": [
+        "OOPL230185",
+        "DBSY230185"
+      ]
+    },
+    {
+      "courseId": "SENG330285_09",
+      "courseName": "Công nghệ phần mềm",
+      "schedule": "Thứ 6: 7->11",
+      "prerequisiteCoursesId": [
+        "OOPL230185",
+        "DBSY230185"
+      ]
+    },
+    {
+      "courseId": "SENG330285_10",
+      "courseName": "Công nghệ phần mềm",
+      "schedule": "Thứ 7: 1->3",
+      "prerequisiteCoursesId": [
+        "OOPL230185",
+        "DBSY230185"
+      ]
+    },
+    {
+      "courseId": "SENG330285_11",
+      "courseName": "Công nghệ phần mềm",
+      "schedule": "Thứ 3: 7->9",
+      "prerequisiteCoursesId": [
+        "OOPL230185",
+        "DBSY230185"
+      ]
+    },
+    {
+      "courseId": "SENG330285_12",
+      "courseName": "Công nghệ phần mềm",
+      "schedule": "Thứ 6: 7->11",
+      "prerequisiteCoursesId": [
+        "OOPL230185",
+        "DBSY230185"
+      ]
+    },
+    {
+      "courseId": "SENG330285_13",
+      "courseName": "Công nghệ phần mềm",
+      "schedule": "Thứ 3: 8->11",
+      "prerequisiteCoursesId": [
+        "OOPL230185",
+        "DBSY230185"
+      ]
+    },
+    {
+      "courseId": "AINT330385_01",
+      "courseName": "Trí tuệ nhân tạo",
+      "schedule": "Thứ 2: 8->11",
+      "prerequisiteCoursesId": [
+        "DSAE230185",
+        "MATH140201"
+      ]
+    },
+    {
+      "courseId": "AINT330385_02",
+      "courseName": "Trí tuệ nhân tạo",
+      "schedule": "Thứ 5: 1->5",
+      "prerequisiteCoursesId": [
+        "DSAE230185",
+        "MATH140201"
+      ]
+    },
+    {
+      "courseId": "AINT330385_03",
+      "courseName": "Trí tuệ nhân tạo",
+      "schedule": "Thứ 2: 1->3",
+      "prerequisiteCoursesId": [
+        "DSAE230185",
+        "MATH140201"
+      ]
+    },
+    {
+      "courseId": "AINT330385_04",
+      "courseName": "Trí tuệ nhân tạo",
+      "schedule": "Thứ 6: 8->11",
+      "prerequisiteCoursesId": [
+        "DSAE230185",
+        "MATH140201"
+      ]
+    },
+    {
+      "courseId": "AINT330385_05",
+      "courseName": "Trí tuệ nhân tạo",
+      "schedule": "Thứ 4: 8->11",
+      "prerequisiteCoursesId": [
+        "DSAE230185",
+        "MATH140201"
+      ]
+    },
+    {
+      "courseId": "AINT330385_06",
+      "courseName": "Trí tuệ nhân tạo",
+      "schedule": "Thứ 2: 4->6",
+      "prerequisiteCoursesId": [
+        "DSAE230185",
+        "MATH140201"
+      ]
+    },
+    {
+      "courseId": "AINT330385_07",
+      "courseName": "Trí tuệ nhân tạo",
+      "schedule": "Thứ 2: 4->6",
+      "prerequisiteCoursesId": [
+        "DSAE230185",
+        "MATH140201"
+      ]
+    },
+    {
+      "courseId": "AINT330385_08",
+      "courseName": "Trí tuệ nhân tạo",
+      "schedule": "Thứ 5: 1->3",
+      "prerequisiteCoursesId": [
+        "DSAE230185",
+        "MATH140201"
+      ]
+    },
+    {
+      "courseId": "AINT330385_09",
+      "courseName": "Trí tuệ nhân tạo",
+      "schedule": "Thứ 6: 8->11",
+      "prerequisiteCoursesId": [
+        "DSAE230185",
+        "MATH140201"
+      ]
+    },
+    {
+      "courseId": "AINT330385_10",
+      "courseName": "Trí tuệ nhân tạo",
+      "schedule": "Thứ 2: 1->4",
+      "prerequisiteCoursesId": [
+        "DSAE230185",
+        "MATH140201"
+      ]
+    },
+    {
+      "courseId": "AINT330385_11",
+      "courseName": "Trí tuệ nhân tạo",
+      "schedule": "Thứ 5: 4->6",
+      "prerequisiteCoursesId": [
+        "DSAE230185",
+        "MATH140201"
+      ]
+    },
+    {
+      "courseId": "AINT330385_12",
+      "courseName": "Trí tuệ nhân tạo",
+      "schedule": "Thứ 5: 1->5",
+      "prerequisiteCoursesId": [
+        "DSAE230185",
+        "MATH140201"
+      ]
+    },
+    {
+      "courseId": "AINT330385_13",
+      "courseName": "Trí tuệ nhân tạo",
+      "schedule": "Thứ 6: 7->9",
+      "prerequisiteCoursesId": [
+        "DSAE230185",
+        "MATH140201"
+      ]
+    },
+    {
+      "courseId": "AINT330385_14",
+      "courseName": "Trí tuệ nhân tạo",
+      "schedule": "Thứ 3: 4->6",
+      "prerequisiteCoursesId": [
+        "DSAE230185",
+        "MATH140201"
+      ]
+    },
+    {
+      "courseId": "MATH140301_01",
+      "courseName": "Xác suất thống kê",
+      "schedule": "Thứ 5: 1->3",
+      "prerequisiteCoursesId": [
+        "MATH140101"
+      ]
+    },
+    {
+      "courseId": "MATH140301_02",
+      "courseName": "Xác suất thống kê",
+      "schedule": "Thứ 4: 1->5",
+      "prerequisiteCoursesId": [
+        "MATH140101"
+      ]
+    },
+    {
+      "courseId": "MATH140301_03",
+      "courseName": "Xác suất thống kê",
+      "schedule": "Thứ 4: 1->5",
+      "prerequisiteCoursesId": [
+        "MATH140101"
+      ]
+    },
+    {
+      "courseId": "MATH140301_04",
+      "courseName": "Xác suất thống kê",
+      "schedule": "Thứ 6: 1->5",
+      "prerequisiteCoursesId": [
+        "MATH140101"
+      ]
+    },
+    {
+      "courseId": "MATH140301_05",
+      "courseName": "Xác suất thống kê",
+      "schedule": "Thứ 7: 1->3",
+      "prerequisiteCoursesId": [
+        "MATH140101"
+      ]
+    },
+    {
+      "courseId": "MATH140301_06",
+      "courseName": "Xác suất thống kê",
+      "schedule": "Thứ 6: 1->3",
+      "prerequisiteCoursesId": [
+        "MATH140101"
+      ]
+    },
+    {
+      "courseId": "MATH140301_07",
+      "courseName": "Xác suất thống kê",
+      "schedule": "Thứ 6: 1->5",
+      "prerequisiteCoursesId": [
+        "MATH140101"
+      ]
+    },
+    {
+      "courseId": "MATH140301_08",
+      "courseName": "Xác suất thống kê",
+      "schedule": "Thứ 2: 1->3",
+      "prerequisiteCoursesId": [
+        "MATH140101"
+      ]
+    },
+    {
+      "courseId": "MATH140301_09",
+      "courseName": "Xác suất thống kê",
+      "schedule": "Thứ 2: 1->4",
+      "prerequisiteCoursesId": [
+        "MATH140101"
+      ]
+    },
+    {
+      "courseId": "MATH140301_10",
+      "courseName": "Xác suất thống kê",
+      "schedule": "Thứ 7: 1->5",
+      "prerequisiteCoursesId": [
+        "MATH140101"
+      ]
+    },
+    {
+      "courseId": "MATH140301_11",
+      "courseName": "Xác suất thống kê",
+      "schedule": "Thứ 4: 4->6",
+      "prerequisiteCoursesId": [
+        "MATH140101"
+      ]
+    },
+    {
+      "courseId": "MATH140301_12",
+      "courseName": "Xác suất thống kê",
+      "schedule": "Thứ 4: 8->11",
+      "prerequisiteCoursesId": [
+        "MATH140101"
+      ]
+    },
+    {
+      "courseId": "MATH140301_13",
+      "courseName": "Xác suất thống kê",
+      "schedule": "Thứ 6: 1->3",
+      "prerequisiteCoursesId": [
+        "MATH140101"
+      ]
+    },
+    {
+      "courseId": "MATH140301_14",
+      "courseName": "Xác suất thống kê",
+      "schedule": "Thứ 3: 8->11",
+      "prerequisiteCoursesId": [
+        "MATH140101"
+      ]
+    },
+    {
+      "courseId": "WEBP230385_01",
+      "courseName": "Lập trình Web",
+      "schedule": "Thứ 7: 1->5",
+      "prerequisiteCoursesId": [
+        "INPR130285",
+        "DBSY230185"
+      ]
+    },
+    {
+      "courseId": "WEBP230385_02",
+      "courseName": "Lập trình Web",
+      "schedule": "Thứ 5: 7->9",
+      "prerequisiteCoursesId": [
+        "INPR130285",
+        "DBSY230185"
+      ]
+    },
+    {
+      "courseId": "WEBP230385_03",
+      "courseName": "Lập trình Web",
+      "schedule": "Thứ 5: 7->11",
+      "prerequisiteCoursesId": [
+        "INPR130285",
+        "DBSY230185"
+      ]
+    },
+    {
+      "courseId": "WEBP230385_04",
+      "courseName": "Lập trình Web",
+      "schedule": "Thứ 7: 1->4",
+      "prerequisiteCoursesId": [
+        "INPR130285",
+        "DBSY230185"
+      ]
+    },
+    {
+      "courseId": "WEBP230385_05",
+      "courseName": "Lập trình Web",
+      "schedule": "Thứ 6: 7->9",
+      "prerequisiteCoursesId": [
+        "INPR130285",
+        "DBSY230185"
+      ]
+    },
+    {
+      "courseId": "WEBP230385_06",
+      "courseName": "Lập trình Web",
+      "schedule": "Thứ 4: 7->9",
+      "prerequisiteCoursesId": [
+        "INPR130285",
+        "DBSY230185"
+      ]
+    },
+    {
+      "courseId": "WEBP230385_07",
+      "courseName": "Lập trình Web",
+      "schedule": "Thứ 3: 1->5",
+      "prerequisiteCoursesId": [
+        "INPR130285",
+        "DBSY230185"
+      ]
+    },
+    {
+      "courseId": "WEBP230385_08",
+      "courseName": "Lập trình Web",
+      "schedule": "Thứ 7: 8->11",
+      "prerequisiteCoursesId": [
+        "INPR130285",
+        "DBSY230185"
+      ]
+    },
+    {
+      "courseId": "WEBP230385_09",
+      "courseName": "Lập trình Web",
+      "schedule": "Thứ 4: 4->6",
+      "prerequisiteCoursesId": [
+        "INPR130285",
+        "DBSY230185"
+      ]
+    },
+    {
+      "courseId": "WEBP230385_10",
+      "courseName": "Lập trình Web",
+      "schedule": "Thứ 7: 1->3",
+      "prerequisiteCoursesId": [
+        "INPR130285",
+        "DBSY230185"
+      ]
+    },
+    {
+      "courseId": "WEBP230385_11",
+      "courseName": "Lập trình Web",
+      "schedule": "Thứ 4: 4->6",
+      "prerequisiteCoursesId": [
+        "INPR130285",
+        "DBSY230185"
+      ]
+    },
+    {
+      "courseId": "WEBP230385_12",
+      "courseName": "Lập trình Web",
+      "schedule": "Thứ 2: 7->11",
+      "prerequisiteCoursesId": [
+        "INPR130285",
+        "DBSY230185"
+      ]
+    },
+    {
+      "courseId": "WEBP230385_13",
+      "courseName": "Lập trình Web",
+      "schedule": "Thứ 6: 8->11",
+      "prerequisiteCoursesId": [
+        "INPR130285",
+        "DBSY230185"
+      ]
+    },
+    {
+      "courseId": "WEBP230385_14",
+      "courseName": "Lập trình Web",
+      "schedule": "Thứ 2: 7->9",
+      "prerequisiteCoursesId": [
+        "INPR130285",
+        "DBSY230185"
+      ]
+    },
+    {
+      "courseId": "ADBS330485_01",
+      "courseName": "Cơ sở dữ liệu nâng cao",
+      "schedule": "Thứ 3: 1->3",
+      "prerequisiteCoursesId": [
+        "DBSY230185"
+      ]
+    },
+    {
+      "courseId": "ADBS330485_02",
+      "courseName": "Cơ sở dữ liệu nâng cao",
+      "schedule": "Thứ 3: 4->6",
+      "prerequisiteCoursesId": [
+        "DBSY230185"
+      ]
+    },
+    {
+      "courseId": "ADBS330485_03",
+      "courseName": "Cơ sở dữ liệu nâng cao",
+      "schedule": "Thứ 7: 7->11",
+      "prerequisiteCoursesId": [
+        "DBSY230185"
+      ]
+    },
+    {
+      "courseId": "ADBS330485_04",
+      "courseName": "Cơ sở dữ liệu nâng cao",
+      "schedule": "Thứ 6: 8->11",
+      "prerequisiteCoursesId": [
+        "DBSY230185"
+      ]
+    },
+    {
+      "courseId": "ADBS330485_05",
+      "courseName": "Cơ sở dữ liệu nâng cao",
+      "schedule": "Thứ 6: 4->6",
+      "prerequisiteCoursesId": [
+        "DBSY230185"
+      ]
+    },
+    {
+      "courseId": "ADBS330485_06",
+      "courseName": "Cơ sở dữ liệu nâng cao",
+      "schedule": "Thứ 3: 4->6",
+      "prerequisiteCoursesId": [
+        "DBSY230185"
+      ]
+    },
+    {
+      "courseId": "ADBS330485_07",
+      "courseName": "Cơ sở dữ liệu nâng cao",
+      "schedule": "Thứ 4: 1->5",
+      "prerequisiteCoursesId": [
+        "DBSY230185"
+      ]
+    },
+    {
+      "courseId": "ADBS330485_08",
+      "courseName": "Cơ sở dữ liệu nâng cao",
+      "schedule": "Thứ 6: 4->6",
+      "prerequisiteCoursesId": [
+        "DBSY230185"
+      ]
+    },
+    {
+      "courseId": "ADBS330485_09",
+      "courseName": "Cơ sở dữ liệu nâng cao",
+      "schedule": "Thứ 2: 7->11",
+      "prerequisiteCoursesId": [
+        "DBSY230185"
+      ]
+    },
+    {
+      "courseId": "ADBS330485_10",
+      "courseName": "Cơ sở dữ liệu nâng cao",
+      "schedule": "Thứ 2: 1->3",
+      "prerequisiteCoursesId": [
+        "DBSY230185"
+      ]
+    },
+    {
+      "courseId": "ADBS330485_11",
+      "courseName": "Cơ sở dữ liệu nâng cao",
+      "schedule": "Thứ 6: 4->6",
+      "prerequisiteCoursesId": [
+        "DBSY230185"
+      ]
+    },
+    {
+      "courseId": "ADBS330485_12",
+      "courseName": "Cơ sở dữ liệu nâng cao",
+      "schedule": "Thứ 2: 4->6",
+      "prerequisiteCoursesId": [
+        "DBSY230185"
+      ]
+    },
+    {
+      "courseId": "ADBS330485_13",
+      "courseName": "Cơ sở dữ liệu nâng cao",
+      "schedule": "Thứ 6: 1->5",
+      "prerequisiteCoursesId": [
+        "DBSY230185"
+      ]
+    },
+    {
+      "courseId": "ADBS330485_14",
+      "courseName": "Cơ sở dữ liệu nâng cao",
+      "schedule": "Thứ 4: 1->4",
+      "prerequisiteCoursesId": [
+        "DBSY230185"
+      ]
+    },
+    {
+      "courseId": "LLCT130205_01",
+      "courseName": "Kinh tế chính trị Mác - Lênin",
+      "schedule": "Thứ 5: 7->11",
+      "prerequisiteCoursesId": [
+        "LLCT130105"
+      ]
+    },
+    {
+      "courseId": "LLCT130205_02",
+      "courseName": "Kinh tế chính trị Mác - Lênin",
+      "schedule": "Thứ 3: 7->9",
+      "prerequisiteCoursesId": [
+        "LLCT130105"
+      ]
+    },
+    {
+      "courseId": "LLCT130205_03",
+      "courseName": "Kinh tế chính trị Mác - Lênin",
+      "schedule": "Thứ 2: 8->11",
+      "prerequisiteCoursesId": [
+        "LLCT130105"
+      ]
+    },
+    {
+      "courseId": "LLCT130205_04",
+      "courseName": "Kinh tế chính trị Mác - Lênin",
+      "schedule": "Thứ 3: 7->11",
+      "prerequisiteCoursesId": [
+        "LLCT130105"
+      ]
+    },
+    {
+      "courseId": "LLCT130205_05",
+      "courseName": "Kinh tế chính trị Mác - Lênin",
+      "schedule": "Thứ 3: 8->11",
+      "prerequisiteCoursesId": [
+        "LLCT130105"
+      ]
+    },
+    {
+      "courseId": "LLCT130205_06",
+      "courseName": "Kinh tế chính trị Mác - Lênin",
+      "schedule": "Thứ 4: 1->5",
+      "prerequisiteCoursesId": [
+        "LLCT130105"
+      ]
+    },
+    {
+      "courseId": "LLCT130205_07",
+      "courseName": "Kinh tế chính trị Mác - Lênin",
+      "schedule": "Thứ 7: 1->5",
+      "prerequisiteCoursesId": [
+        "LLCT130105"
+      ]
+    },
+    {
+      "courseId": "LLCT130205_08",
+      "courseName": "Kinh tế chính trị Mác - Lênin",
+      "schedule": "Thứ 5: 1->4",
+      "prerequisiteCoursesId": [
+        "LLCT130105"
+      ]
+    },
+    {
+      "courseId": "LLCT130205_09",
+      "courseName": "Kinh tế chính trị Mác - Lênin",
+      "schedule": "Thứ 2: 1->4",
+      "prerequisiteCoursesId": [
+        "LLCT130105"
+      ]
+    },
+    {
+      "courseId": "LLCT130205_10",
+      "courseName": "Kinh tế chính trị Mác - Lênin",
+      "schedule": "Thứ 5: 7->11",
+      "prerequisiteCoursesId": [
+        "LLCT130105"
+      ]
+    },
+    {
+      "courseId": "LLCT130205_11",
+      "courseName": "Kinh tế chính trị Mác - Lênin",
+      "schedule": "Thứ 4: 1->5",
+      "prerequisiteCoursesId": [
+        "LLCT130105"
+      ]
+    },
+    {
+      "courseId": "LLCT130205_12",
+      "courseName": "Kinh tế chính trị Mác - Lênin",
+      "schedule": "Thứ 7: 1->5",
+      "prerequisiteCoursesId": [
+        "LLCT130105"
+      ]
+    },
+    {
+      "courseId": "LLCT130205_13",
+      "courseName": "Kinh tế chính trị Mác - Lênin",
+      "schedule": "Thứ 5: 7->11",
+      "prerequisiteCoursesId": [
+        "LLCT130105"
+      ]
+    },
+    {
+      "courseId": "LLCT130205_14",
+      "courseName": "Kinh tế chính trị Mác - Lênin",
+      "schedule": "Thứ 3: 4->6",
+      "prerequisiteCoursesId": [
+        "LLCT130105"
+      ]
+    },
+    {
+      "courseId": "LLCT130305_01",
+      "courseName": "Chủ nghĩa xã hội khoa học",
+      "schedule": "Thứ 5: 1->3",
+      "prerequisiteCoursesId": [
+        "LLCT130205"
+      ]
+    },
+    {
+      "courseId": "LLCT130305_02",
+      "courseName": "Chủ nghĩa xã hội khoa học",
+      "schedule": "Thứ 2: 7->9",
+      "prerequisiteCoursesId": [
+        "LLCT130205"
+      ]
+    },
+    {
+      "courseId": "LLCT130305_03",
+      "courseName": "Chủ nghĩa xã hội khoa học",
+      "schedule": "Thứ 4: 7->9",
+      "prerequisiteCoursesId": [
+        "LLCT130205"
+      ]
+    },
+    {
+      "courseId": "LLCT130305_04",
+      "courseName": "Chủ nghĩa xã hội khoa học",
+      "schedule": "Thứ 4: 8->11",
+      "prerequisiteCoursesId": [
+        "LLCT130205"
+      ]
+    },
+    {
+      "courseId": "LLCT130305_05",
+      "courseName": "Chủ nghĩa xã hội khoa học",
+      "schedule": "Thứ 7: 1->4",
+      "prerequisiteCoursesId": [
+        "LLCT130205"
+      ]
+    },
+    {
+      "courseId": "LLCT130305_06",
+      "courseName": "Chủ nghĩa xã hội khoa học",
+      "schedule": "Thứ 4: 1->5",
+      "prerequisiteCoursesId": [
+        "LLCT130205"
+      ]
+    },
+    {
+      "courseId": "LLCT130305_07",
+      "courseName": "Chủ nghĩa xã hội khoa học",
+      "schedule": "Thứ 2: 1->3",
+      "prerequisiteCoursesId": [
+        "LLCT130205"
+      ]
+    },
+    {
+      "courseId": "LLCT130305_08",
+      "courseName": "Chủ nghĩa xã hội khoa học",
+      "schedule": "Thứ 3: 1->3",
+      "prerequisiteCoursesId": [
+        "LLCT130205"
+      ]
+    },
+    {
+      "courseId": "LLCT130305_09",
+      "courseName": "Chủ nghĩa xã hội khoa học",
+      "schedule": "Thứ 7: 7->9",
+      "prerequisiteCoursesId": [
+        "LLCT130205"
+      ]
+    },
+    {
+      "courseId": "LLCT130305_10",
+      "courseName": "Chủ nghĩa xã hội khoa học",
+      "schedule": "Thứ 3: 4->6",
+      "prerequisiteCoursesId": [
+        "LLCT130205"
+      ]
+    },
+    {
+      "courseId": "LLCT130305_11",
+      "courseName": "Chủ nghĩa xã hội khoa học",
+      "schedule": "Thứ 4: 1->5",
+      "prerequisiteCoursesId": [
+        "LLCT130205"
+      ]
+    },
+    {
+      "courseId": "LLCT130305_12",
+      "courseName": "Chủ nghĩa xã hội khoa học",
+      "schedule": "Thứ 5: 7->11",
+      "prerequisiteCoursesId": [
+        "LLCT130205"
+      ]
+    },
+    {
+      "courseId": "LLCT130305_13",
+      "courseName": "Chủ nghĩa xã hội khoa học",
+      "schedule": "Thứ 7: 7->9",
+      "prerequisiteCoursesId": [
+        "LLCT130205"
+      ]
+    },
+    {
+      "courseId": "LLCT130305_14",
+      "courseName": "Chủ nghĩa xã hội khoa học",
+      "schedule": "Thứ 3: 1->3",
+      "prerequisiteCoursesId": [
+        "LLCT130205"
+      ]
+    },
+    {
+      "courseId": "LLCT130405_01",
+      "courseName": "Lịch sử Đảng Cộng sản Việt Nam",
+      "schedule": "Thứ 6: 1->4",
+      "prerequisiteCoursesId": [
+        "LLCT130305"
+      ]
+    },
+    {
+      "courseId": "LLCT130405_02",
+      "courseName": "Lịch sử Đảng Cộng sản Việt Nam",
+      "schedule": "Thứ 2: 1->3",
+      "prerequisiteCoursesId": [
+        "LLCT130305"
+      ]
+    },
+    {
+      "courseId": "LLCT130405_03",
+      "courseName": "Lịch sử Đảng Cộng sản Việt Nam",
+      "schedule": "Thứ 3: 8->11",
+      "prerequisiteCoursesId": [
+        "LLCT130305"
+      ]
+    },
+    {
+      "courseId": "LLCT130405_04",
+      "courseName": "Lịch sử Đảng Cộng sản Việt Nam",
+      "schedule": "Thứ 4: 1->4",
+      "prerequisiteCoursesId": [
+        "LLCT130305"
+      ]
+    },
+    {
+      "courseId": "LLCT130405_05",
+      "courseName": "Lịch sử Đảng Cộng sản Việt Nam",
+      "schedule": "Thứ 4: 7->11",
+      "prerequisiteCoursesId": [
+        "LLCT130305"
+      ]
+    },
+    {
+      "courseId": "LLCT130405_06",
+      "courseName": "Lịch sử Đảng Cộng sản Việt Nam",
+      "schedule": "Thứ 2: 7->11",
+      "prerequisiteCoursesId": [
+        "LLCT130305"
+      ]
+    },
+    {
+      "courseId": "LLCT130405_07",
+      "courseName": "Lịch sử Đảng Cộng sản Việt Nam",
+      "schedule": "Thứ 2: 4->6",
+      "prerequisiteCoursesId": [
+        "LLCT130305"
+      ]
+    },
+    {
+      "courseId": "LLCT130405_08",
+      "courseName": "Lịch sử Đảng Cộng sản Việt Nam",
+      "schedule": "Thứ 7: 7->11",
+      "prerequisiteCoursesId": [
+        "LLCT130305"
+      ]
+    },
+    {
+      "courseId": "LLCT130405_09",
+      "courseName": "Lịch sử Đảng Cộng sản Việt Nam",
+      "schedule": "Thứ 5: 7->11",
+      "prerequisiteCoursesId": [
+        "LLCT130305"
+      ]
+    },
+    {
+      "courseId": "LLCT130405_10",
+      "courseName": "Lịch sử Đảng Cộng sản Việt Nam",
+      "schedule": "Thứ 6: 1->5",
+      "prerequisiteCoursesId": [
+        "LLCT130305"
+      ]
+    },
+    {
+      "courseId": "LLCT130405_11",
+      "courseName": "Lịch sử Đảng Cộng sản Việt Nam",
+      "schedule": "Thứ 2: 7->11",
+      "prerequisiteCoursesId": [
+        "LLCT130305"
+      ]
+    },
+    {
+      "courseId": "LLCT130405_12",
+      "courseName": "Lịch sử Đảng Cộng sản Việt Nam",
+      "schedule": "Thứ 7: 7->9",
+      "prerequisiteCoursesId": [
+        "LLCT130305"
+      ]
+    },
+    {
+      "courseId": "LLCT130405_13",
+      "courseName": "Lịch sử Đảng Cộng sản Việt Nam",
+      "schedule": "Thứ 3: 4->6",
+      "prerequisiteCoursesId": [
+        "LLCT130305"
+      ]
+    },
+    {
+      "courseId": "LLCT130405_14",
+      "courseName": "Lịch sử Đảng Cộng sản Việt Nam",
+      "schedule": "Thứ 7: 7->11",
+      "prerequisiteCoursesId": [
+        "LLCT130305"
+      ]
+    },
+    {
+      "courseId": "LLCT130505_01",
+      "courseName": "Tư tưởng Hồ Chí Minh",
+      "schedule": "Thứ 2: 8->11",
+      "prerequisiteCoursesId": [
+        "LLCT130405"
+      ]
+    },
+    {
+      "courseId": "LLCT130505_02",
+      "courseName": "Tư tưởng Hồ Chí Minh",
+      "schedule": "Thứ 5: 1->5",
+      "prerequisiteCoursesId": [
+        "LLCT130405"
+      ]
+    },
+    {
+      "courseId": "LLCT130505_03",
+      "courseName": "Tư tưởng Hồ Chí Minh",
+      "schedule": "Thứ 3: 7->9",
+      "prerequisiteCoursesId": [
+        "LLCT130405"
+      ]
+    },
+    {
+      "courseId": "LLCT130505_04",
+      "courseName": "Tư tưởng Hồ Chí Minh",
+      "schedule": "Thứ 2: 1->4",
+      "prerequisiteCoursesId": [
+        "LLCT130405"
+      ]
+    },
+    {
+      "courseId": "LLCT130505_05",
+      "courseName": "Tư tưởng Hồ Chí Minh",
+      "schedule": "Thứ 6: 1->3",
+      "prerequisiteCoursesId": [
+        "LLCT130405"
+      ]
+    },
+    {
+      "courseId": "LLCT130505_06",
+      "courseName": "Tư tưởng Hồ Chí Minh",
+      "schedule": "Thứ 2: 4->6",
+      "prerequisiteCoursesId": [
+        "LLCT130405"
+      ]
+    },
+    {
+      "courseId": "LLCT130505_07",
+      "courseName": "Tư tưởng Hồ Chí Minh",
+      "schedule": "Thứ 6: 7->11",
+      "prerequisiteCoursesId": [
+        "LLCT130405"
+      ]
+    },
+    {
+      "courseId": "LLCT130505_08",
+      "courseName": "Tư tưởng Hồ Chí Minh",
+      "schedule": "Thứ 7: 1->4",
+      "prerequisiteCoursesId": [
+        "LLCT130405"
+      ]
+    },
+    {
+      "courseId": "LLCT130505_09",
+      "courseName": "Tư tưởng Hồ Chí Minh",
+      "schedule": "Thứ 6: 1->5",
+      "prerequisiteCoursesId": [
+        "LLCT130405"
+      ]
+    },
+    {
+      "courseId": "LLCT130505_10",
+      "courseName": "Tư tưởng Hồ Chí Minh",
+      "schedule": "Thứ 2: 4->6",
+      "prerequisiteCoursesId": [
+        "LLCT130405"
+      ]
+    },
+    {
+      "courseId": "LLCT130505_11",
+      "courseName": "Tư tưởng Hồ Chí Minh",
+      "schedule": "Thứ 2: 7->9",
+      "prerequisiteCoursesId": [
+        "LLCT130405"
+      ]
+    },
+    {
+      "courseId": "LLCT130505_12",
+      "courseName": "Tư tưởng Hồ Chí Minh",
+      "schedule": "Thứ 6: 1->4",
+      "prerequisiteCoursesId": [
+        "LLCT130405"
+      ]
+    },
+    {
+      "courseId": "LLCT130505_13",
+      "courseName": "Tư tưởng Hồ Chí Minh",
+      "schedule": "Thứ 4: 1->4",
+      "prerequisiteCoursesId": [
+        "LLCT130405"
+      ]
+    },
+    {
+      "courseId": "LLCT130505_14",
+      "courseName": "Tư tưởng Hồ Chí Minh",
+      "schedule": "Thứ 6: 1->4",
+      "prerequisiteCoursesId": [
+        "LLCT130405"
+      ]
+    },
+    {
+      "courseId": "ENGL130237_01",
+      "courseName": "Anh văn 2",
+      "schedule": "Thứ 4: 1->5",
+      "prerequisiteCoursesId": [
+        "ENGL130137"
+      ]
+    },
+    {
+      "courseId": "ENGL130237_02",
+      "courseName": "Anh văn 2",
+      "schedule": "Thứ 4: 1->3",
+      "prerequisiteCoursesId": [
+        "ENGL130137"
+      ]
+    },
+    {
+      "courseId": "ENGL130237_03",
+      "courseName": "Anh văn 2",
+      "schedule": "Thứ 4: 1->5",
+      "prerequisiteCoursesId": [
+        "ENGL130137"
+      ]
+    },
+    {
+      "courseId": "ENGL130237_04",
+      "courseName": "Anh văn 2",
+      "schedule": "Thứ 6: 1->4",
+      "prerequisiteCoursesId": [
+        "ENGL130137"
+      ]
+    },
+    {
+      "courseId": "ENGL130237_05",
+      "courseName": "Anh văn 2",
+      "schedule": "Thứ 3: 1->4",
+      "prerequisiteCoursesId": [
+        "ENGL130137"
+      ]
+    },
+    {
+      "courseId": "ENGL130237_06",
+      "courseName": "Anh văn 2",
+      "schedule": "Thứ 7: 8->11",
+      "prerequisiteCoursesId": [
+        "ENGL130137"
+      ]
+    },
+    {
+      "courseId": "ENGL130237_07",
+      "courseName": "Anh văn 2",
+      "schedule": "Thứ 7: 7->11",
+      "prerequisiteCoursesId": [
+        "ENGL130137"
+      ]
+    },
+    {
+      "courseId": "ENGL130237_08",
+      "courseName": "Anh văn 2",
+      "schedule": "Thứ 4: 1->5",
+      "prerequisiteCoursesId": [
+        "ENGL130137"
+      ]
+    },
+    {
+      "courseId": "ENGL130237_09",
+      "courseName": "Anh văn 2",
+      "schedule": "Thứ 4: 7->9",
+      "prerequisiteCoursesId": [
+        "ENGL130137"
+      ]
+    },
+    {
+      "courseId": "ENGL130237_10",
+      "courseName": "Anh văn 2",
+      "schedule": "Thứ 7: 7->9",
+      "prerequisiteCoursesId": [
+        "ENGL130137"
+      ]
+    },
+    {
+      "courseId": "ENGL130237_11",
+      "courseName": "Anh văn 2",
+      "schedule": "Thứ 4: 8->11",
+      "prerequisiteCoursesId": [
+        "ENGL130137"
+      ]
+    },
+    {
+      "courseId": "ENGL130237_12",
+      "courseName": "Anh văn 2",
+      "schedule": "Thứ 2: 1->3",
+      "prerequisiteCoursesId": [
+        "ENGL130137"
+      ]
+    },
+    {
+      "courseId": "ENGL130237_13",
+      "courseName": "Anh văn 2",
+      "schedule": "Thứ 4: 1->4",
+      "prerequisiteCoursesId": [
+        "ENGL130137"
+      ]
+    },
+    {
+      "courseId": "ENGL130237_14",
+      "courseName": "Anh văn 2",
+      "schedule": "Thứ 5: 1->5",
+      "prerequisiteCoursesId": [
+        "ENGL130137"
+      ]
+    },
+    {
+      "courseId": "ENGL130337_01",
+      "courseName": "Anh văn 3",
+      "schedule": "Thứ 3: 8->11",
+      "prerequisiteCoursesId": [
+        "ENGL130237"
+      ]
+    },
+    {
+      "courseId": "ENGL130337_02",
+      "courseName": "Anh văn 3",
+      "schedule": "Thứ 5: 7->11",
+      "prerequisiteCoursesId": [
+        "ENGL130237"
+      ]
+    },
+    {
+      "courseId": "ENGL130337_03",
+      "courseName": "Anh văn 3",
+      "schedule": "Thứ 2: 8->11",
+      "prerequisiteCoursesId": [
+        "ENGL130237"
+      ]
+    },
+    {
+      "courseId": "ENGL130337_04",
+      "courseName": "Anh văn 3",
+      "schedule": "Thứ 4: 1->5",
+      "prerequisiteCoursesId": [
+        "ENGL130237"
+      ]
+    },
+    {
+      "courseId": "ENGL130337_05",
+      "courseName": "Anh văn 3",
+      "schedule": "Thứ 7: 1->5",
+      "prerequisiteCoursesId": [
+        "ENGL130237"
+      ]
+    },
+    {
+      "courseId": "ENGL130337_06",
+      "courseName": "Anh văn 3",
+      "schedule": "Thứ 7: 7->11",
+      "prerequisiteCoursesId": [
+        "ENGL130237"
+      ]
+    },
+    {
+      "courseId": "ENGL130337_07",
+      "courseName": "Anh văn 3",
+      "schedule": "Thứ 6: 7->11",
+      "prerequisiteCoursesId": [
+        "ENGL130237"
+      ]
+    },
+    {
+      "courseId": "ENGL130337_08",
+      "courseName": "Anh văn 3",
+      "schedule": "Thứ 7: 1->4",
+      "prerequisiteCoursesId": [
+        "ENGL130237"
+      ]
+    },
+    {
+      "courseId": "ENGL130337_09",
+      "courseName": "Anh văn 3",
+      "schedule": "Thứ 3: 1->3",
+      "prerequisiteCoursesId": [
+        "ENGL130237"
+      ]
+    },
+    {
+      "courseId": "ENGL130337_10",
+      "courseName": "Anh văn 3",
+      "schedule": "Thứ 3: 1->5",
+      "prerequisiteCoursesId": [
+        "ENGL130237"
+      ]
+    },
+    {
+      "courseId": "ENGL130337_11",
+      "courseName": "Anh văn 3",
+      "schedule": "Thứ 6: 1->3",
+      "prerequisiteCoursesId": [
+        "ENGL130237"
+      ]
+    },
+    {
+      "courseId": "ENGL130337_12",
+      "courseName": "Anh văn 3",
+      "schedule": "Thứ 7: 7->11",
+      "prerequisiteCoursesId": [
+        "ENGL130237"
+      ]
+    },
+    {
+      "courseId": "ENGL130337_13",
+      "courseName": "Anh văn 3",
+      "schedule": "Thứ 2: 4->6",
+      "prerequisiteCoursesId": [
+        "ENGL130237"
+      ]
+    },
+    {
+      "courseId": "ENGL130337_14",
+      "courseName": "Anh văn 3",
+      "schedule": "Thứ 4: 1->4",
+      "prerequisiteCoursesId": [
+        "ENGL130237"
+      ]
+    },
+    {
+      "courseId": "GDQP110231_01",
+      "courseName": "Giáo dục quốc phòng 2",
+      "schedule": "Thứ 7: 1->4",
+      "prerequisiteCoursesId": [
+        "GDQP110131"
+      ]
+    },
+    {
+      "courseId": "GDQP110231_02",
+      "courseName": "Giáo dục quốc phòng 2",
+      "schedule": "Thứ 2: 1->4",
+      "prerequisiteCoursesId": [
+        "GDQP110131"
+      ]
+    },
+    {
+      "courseId": "GDQP110231_03",
+      "courseName": "Giáo dục quốc phòng 2",
+      "schedule": "Thứ 3: 8->11",
+      "prerequisiteCoursesId": [
+        "GDQP110131"
+      ]
+    },
+    {
+      "courseId": "GDQP110231_04",
+      "courseName": "Giáo dục quốc phòng 2",
+      "schedule": "Thứ 3: 1->5",
+      "prerequisiteCoursesId": [
+        "GDQP110131"
+      ]
+    },
+    {
+      "courseId": "GDQP110231_05",
+      "courseName": "Giáo dục quốc phòng 2",
+      "schedule": "Thứ 6: 4->6",
+      "prerequisiteCoursesId": [
+        "GDQP110131"
+      ]
+    },
+    {
+      "courseId": "GDQP110231_06",
+      "courseName": "Giáo dục quốc phòng 2",
+      "schedule": "Thứ 2: 7->9",
+      "prerequisiteCoursesId": [
+        "GDQP110131"
+      ]
+    },
+    {
+      "courseId": "GDQP110231_07",
+      "courseName": "Giáo dục quốc phòng 2",
+      "schedule": "Thứ 6: 1->4",
+      "prerequisiteCoursesId": [
+        "GDQP110131"
+      ]
+    },
+    {
+      "courseId": "GDQP110231_08",
+      "courseName": "Giáo dục quốc phòng 2",
+      "schedule": "Thứ 4: 1->5",
+      "prerequisiteCoursesId": [
+        "GDQP110131"
+      ]
+    },
+    {
+      "courseId": "GDQP110231_09",
+      "courseName": "Giáo dục quốc phòng 2",
+      "schedule": "Thứ 4: 1->5",
+      "prerequisiteCoursesId": [
+        "GDQP110131"
+      ]
+    },
+    {
+      "courseId": "GDQP110231_10",
+      "courseName": "Giáo dục quốc phòng 2",
+      "schedule": "Thứ 3: 7->11",
+      "prerequisiteCoursesId": [
+        "GDQP110131"
+      ]
+    },
+    {
+      "courseId": "GDQP110231_11",
+      "courseName": "Giáo dục quốc phòng 2",
+      "schedule": "Thứ 2: 4->6",
+      "prerequisiteCoursesId": [
+        "GDQP110131"
+      ]
+    },
+    {
+      "courseId": "GDQP110231_12",
+      "courseName": "Giáo dục quốc phòng 2",
+      "schedule": "Thứ 4: 4->6",
+      "prerequisiteCoursesId": [
+        "GDQP110131"
+      ]
+    },
+    {
+      "courseId": "GDQP110231_13",
+      "courseName": "Giáo dục quốc phòng 2",
+      "schedule": "Thứ 3: 1->5",
+      "prerequisiteCoursesId": [
+        "GDQP110131"
+      ]
+    },
+    {
+      "courseId": "PHED110132_01",
+      "courseName": "Giáo dục thể chất 1",
+      "schedule": "Thứ 2: 1->3",
+      "prerequisiteCoursesId": []
+    },
+    {
+      "courseId": "PHED110132_02",
+      "courseName": "Giáo dục thể chất 1",
+      "schedule": "Thứ 4: 7->11",
+      "prerequisiteCoursesId": []
+    },
+    {
+      "courseId": "PHED110132_03",
+      "courseName": "Giáo dục thể chất 1",
+      "schedule": "Thứ 5: 7->11",
+      "prerequisiteCoursesId": []
+    },
+    {
+      "courseId": "PHED110132_04",
+      "courseName": "Giáo dục thể chất 1",
+      "schedule": "Thứ 5: 1->5",
+      "prerequisiteCoursesId": []
+    },
+    {
+      "courseId": "PHED110132_05",
+      "courseName": "Giáo dục thể chất 1",
+      "schedule": "Thứ 3: 1->5",
+      "prerequisiteCoursesId": []
+    },
+    {
+      "courseId": "PHED110132_06",
+      "courseName": "Giáo dục thể chất 1",
+      "schedule": "Thứ 5: 7->9",
+      "prerequisiteCoursesId": []
+    },
+    {
+      "courseId": "PHED110132_07",
+      "courseName": "Giáo dục thể chất 1",
+      "schedule": "Thứ 2: 7->9",
+      "prerequisiteCoursesId": []
+    },
+    {
+      "courseId": "PHED110132_08",
+      "courseName": "Giáo dục thể chất 1",
+      "schedule": "Thứ 7: 8->11",
+      "prerequisiteCoursesId": []
+    },
+    {
+      "courseId": "PHED110132_09",
+      "courseName": "Giáo dục thể chất 1",
+      "schedule": "Thứ 3: 4->6",
+      "prerequisiteCoursesId": []
+    },
+    {
+      "courseId": "PHED110132_10",
+      "courseName": "Giáo dục thể chất 1",
+      "schedule": "Thứ 5: 7->11",
+      "prerequisiteCoursesId": []
+    },
+    {
+      "courseId": "PHED110132_11",
+      "courseName": "Giáo dục thể chất 1",
+      "schedule": "Thứ 7: 7->11",
+      "prerequisiteCoursesId": []
+    },
+    {
+      "courseId": "PHED110132_12",
+      "courseName": "Giáo dục thể chất 1",
+      "schedule": "Thứ 3: 1->3",
+      "prerequisiteCoursesId": []
+    },
+    {
+      "courseId": "PHED110132_13",
+      "courseName": "Giáo dục thể chất 1",
+      "schedule": "Thứ 5: 7->11",
+      "prerequisiteCoursesId": []
+    },
+    {
+      "courseId": "PHED110132_14",
+      "courseName": "Giáo dục thể chất 1",
+      "schedule": "Thứ 6: 1->5",
+      "prerequisiteCoursesId": []
+    },
+    {
+      "courseId": "PHED110232_01",
+      "courseName": "Giáo dục thể chất 2",
+      "schedule": "Thứ 3: 7->11",
+      "prerequisiteCoursesId": [
+        "PHED110132"
+      ]
+    },
+    {
+      "courseId": "PHED110232_02",
+      "courseName": "Giáo dục thể chất 2",
+      "schedule": "Thứ 3: 1->3",
+      "prerequisiteCoursesId": [
+        "PHED110132"
+      ]
+    },
+    {
+      "courseId": "PHED110232_03",
+      "courseName": "Giáo dục thể chất 2",
+      "schedule": "Thứ 4: 7->11",
+      "prerequisiteCoursesId": [
+        "PHED110132"
+      ]
+    },
+    {
+      "courseId": "PHED110232_04",
+      "courseName": "Giáo dục thể chất 2",
+      "schedule": "Thứ 7: 4->6",
+      "prerequisiteCoursesId": [
+        "PHED110132"
+      ]
+    },
+    {
+      "courseId": "PHED110232_05",
+      "courseName": "Giáo dục thể chất 2",
+      "schedule": "Thứ 3: 1->3",
+      "prerequisiteCoursesId": [
+        "PHED110132"
+      ]
+    },
+    {
+      "courseId": "PHED110232_06",
+      "courseName": "Giáo dục thể chất 2",
+      "schedule": "Thứ 7: 8->11",
+      "prerequisiteCoursesId": [
+        "PHED110132"
+      ]
+    },
+    {
+      "courseId": "PHED110232_07",
+      "courseName": "Giáo dục thể chất 2",
+      "schedule": "Thứ 4: 1->4",
+      "prerequisiteCoursesId": [
+        "PHED110132"
+      ]
+    },
+    {
+      "courseId": "PHED110232_08",
+      "courseName": "Giáo dục thể chất 2",
+      "schedule": "Thứ 7: 4->6",
+      "prerequisiteCoursesId": [
+        "PHED110132"
+      ]
+    },
+    {
+      "courseId": "PHED110232_09",
+      "courseName": "Giáo dục thể chất 2",
+      "schedule": "Thứ 7: 1->5",
+      "prerequisiteCoursesId": [
+        "PHED110132"
+      ]
+    },
+    {
+      "courseId": "PHED110232_10",
+      "courseName": "Giáo dục thể chất 2",
+      "schedule": "Thứ 6: 1->3",
+      "prerequisiteCoursesId": [
+        "PHED110132"
+      ]
+    },
+    {
+      "courseId": "PHED110232_11",
+      "courseName": "Giáo dục thể chất 2",
+      "schedule": "Thứ 7: 1->3",
+      "prerequisiteCoursesId": [
+        "PHED110132"
+      ]
+    },
+    {
+      "courseId": "PHED110232_12",
+      "courseName": "Giáo dục thể chất 2",
+      "schedule": "Thứ 4: 1->5",
+      "prerequisiteCoursesId": [
+        "PHED110132"
+      ]
+    },
+    {
+      "courseId": "PHED110232_13",
+      "courseName": "Giáo dục thể chất 2",
+      "schedule": "Thứ 7: 1->5",
+      "prerequisiteCoursesId": [
+        "PHED110132"
+      ]
+    },
+    {
+      "courseId": "PHED110232_14",
+      "courseName": "Giáo dục thể chất 2",
+      "schedule": "Thứ 6: 7->9",
+      "prerequisiteCoursesId": [
+        "PHED110132"
+      ]
+    },
+    {
+      "courseId": "PROJ230185_01",
+      "courseName": "Đồ án cơ sở ngành",
+      "schedule": "Thứ 5: 8->11",
+      "prerequisiteCoursesId": [
+        "DSAE230185",
+        "OOPL230185"
+      ]
+    },
+    {
+      "courseId": "PROJ230185_02",
+      "courseName": "Đồ án cơ sở ngành",
+      "schedule": "Thứ 2: 7->11",
+      "prerequisiteCoursesId": [
+        "DSAE230185",
+        "OOPL230185"
+      ]
+    },
+    {
+      "courseId": "PROJ230185_03",
+      "courseName": "Đồ án cơ sở ngành",
+      "schedule": "Thứ 3: 8->11",
+      "prerequisiteCoursesId": [
+        "DSAE230185",
+        "OOPL230185"
+      ]
+    },
+    {
+      "courseId": "PROJ230185_04",
+      "courseName": "Đồ án cơ sở ngành",
+      "schedule": "Thứ 7: 7->9",
+      "prerequisiteCoursesId": [
+        "DSAE230185",
+        "OOPL230185"
+      ]
+    },
+    {
+      "courseId": "PROJ230185_05",
+      "courseName": "Đồ án cơ sở ngành",
+      "schedule": "Thứ 6: 1->3",
+      "prerequisiteCoursesId": [
+        "DSAE230185",
+        "OOPL230185"
+      ]
+    },
+    {
+      "courseId": "PROJ230185_06",
+      "courseName": "Đồ án cơ sở ngành",
+      "schedule": "Thứ 5: 1->5",
+      "prerequisiteCoursesId": [
+        "DSAE230185",
+        "OOPL230185"
+      ]
+    },
+    {
+      "courseId": "PROJ230185_07",
+      "courseName": "Đồ án cơ sở ngành",
+      "schedule": "Thứ 4: 1->4",
+      "prerequisiteCoursesId": [
+        "DSAE230185",
+        "OOPL230185"
+      ]
+    },
+    {
+      "courseId": "PROJ230185_08",
+      "courseName": "Đồ án cơ sở ngành",
+      "schedule": "Thứ 3: 1->5",
+      "prerequisiteCoursesId": [
+        "DSAE230185",
+        "OOPL230185"
+      ]
+    },
+    {
+      "courseId": "PROJ230185_09",
+      "courseName": "Đồ án cơ sở ngành",
+      "schedule": "Thứ 3: 8->11",
+      "prerequisiteCoursesId": [
+        "DSAE230185",
+        "OOPL230185"
+      ]
+    },
+    {
+      "courseId": "PROJ230185_10",
+      "courseName": "Đồ án cơ sở ngành",
+      "schedule": "Thứ 2: 8->11",
+      "prerequisiteCoursesId": [
+        "DSAE230185",
+        "OOPL230185"
+      ]
+    },
+    {
+      "courseId": "PROJ230185_11",
+      "courseName": "Đồ án cơ sở ngành",
+      "schedule": "Thứ 2: 8->11",
+      "prerequisiteCoursesId": [
+        "DSAE230185",
+        "OOPL230185"
+      ]
+    },
+    {
+      "courseId": "PROJ230185_12",
+      "courseName": "Đồ án cơ sở ngành",
+      "schedule": "Thứ 6: 1->5",
+      "prerequisiteCoursesId": [
+        "DSAE230185",
+        "OOPL230185"
+      ]
+    },
+    {
+      "courseId": "PROJ230185_13",
+      "courseName": "Đồ án cơ sở ngành",
+      "schedule": "Thứ 7: 1->5",
+      "prerequisiteCoursesId": [
+        "DSAE230185",
+        "OOPL230185"
+      ]
+    },
+    {
+      "courseId": "PROJ230185_14",
+      "courseName": "Đồ án cơ sở ngành",
+      "schedule": "Thứ 6: 1->5",
+      "prerequisiteCoursesId": [
+        "DSAE230185",
+        "OOPL230185"
+      ]
+    },
+    {
+      "courseId": "MOBL330585_01",
+      "courseName": "Lập trình thiết bị di động",
+      "schedule": "Thứ 6: 7->11",
+      "prerequisiteCoursesId": [
+        "OOPL230185"
+      ]
+    },
+    {
+      "courseId": "MOBL330585_02",
+      "courseName": "Lập trình thiết bị di động",
+      "schedule": "Thứ 2: 1->5",
+      "prerequisiteCoursesId": [
+        "OOPL230185"
+      ]
+    },
+    {
+      "courseId": "MOBL330585_03",
+      "courseName": "Lập trình thiết bị di động",
+      "schedule": "Thứ 7: 1->4",
+      "prerequisiteCoursesId": [
+        "OOPL230185"
+      ]
+    },
+    {
+      "courseId": "MOBL330585_04",
+      "courseName": "Lập trình thiết bị di động",
+      "schedule": "Thứ 3: 7->9",
+      "prerequisiteCoursesId": [
+        "OOPL230185"
+      ]
+    },
+    {
+      "courseId": "MOBL330585_05",
+      "courseName": "Lập trình thiết bị di động",
+      "schedule": "Thứ 7: 7->9",
+      "prerequisiteCoursesId": [
+        "OOPL230185"
+      ]
+    },
+    {
+      "courseId": "MOBL330585_06",
+      "courseName": "Lập trình thiết bị di động",
+      "schedule": "Thứ 5: 7->9",
+      "prerequisiteCoursesId": [
+        "OOPL230185"
+      ]
+    },
+    {
+      "courseId": "MOBL330585_07",
+      "courseName": "Lập trình thiết bị di động",
+      "schedule": "Thứ 3: 1->4",
+      "prerequisiteCoursesId": [
+        "OOPL230185"
+      ]
+    },
+    {
+      "courseId": "MOBL330585_08",
+      "courseName": "Lập trình thiết bị di động",
+      "schedule": "Thứ 3: 8->11",
+      "prerequisiteCoursesId": [
+        "OOPL230185"
+      ]
+    },
+    {
+      "courseId": "MOBL330585_09",
+      "courseName": "Lập trình thiết bị di động",
+      "schedule": "Thứ 3: 1->3",
+      "prerequisiteCoursesId": [
+        "OOPL230185"
+      ]
+    },
+    {
+      "courseId": "MOBL330585_10",
+      "courseName": "Lập trình thiết bị di động",
+      "schedule": "Thứ 3: 1->5",
+      "prerequisiteCoursesId": [
+        "OOPL230185"
+      ]
+    },
+    {
+      "courseId": "MOBL330585_11",
+      "courseName": "Lập trình thiết bị di động",
+      "schedule": "Thứ 2: 1->4",
+      "prerequisiteCoursesId": [
+        "OOPL230185"
+      ]
+    },
+    {
+      "courseId": "MOBL330585_12",
+      "courseName": "Lập trình thiết bị di động",
+      "schedule": "Thứ 7: 1->5",
+      "prerequisiteCoursesId": [
+        "OOPL230185"
+      ]
+    },
+    {
+      "courseId": "MOBL330585_13",
+      "courseName": "Lập trình thiết bị di động",
+      "schedule": "Thứ 6: 7->11",
+      "prerequisiteCoursesId": [
+        "OOPL230185"
+      ]
+    },
+    {
+      "courseId": "MOBL330585_14",
+      "courseName": "Lập trình thiết bị di động",
+      "schedule": "Thứ 4: 1->4",
+      "prerequisiteCoursesId": [
+        "OOPL230185"
+      ]
+    },
+    {
+      "courseId": "MOBL330585_15",
+      "courseName": "Lập trình thiết bị di động",
+      "schedule": "Thứ 3: 8->11",
+      "prerequisiteCoursesId": [
+        "OOPL230185"
+      ]
     }
   ]
 }

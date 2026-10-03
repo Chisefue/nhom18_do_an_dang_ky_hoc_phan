@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="vi"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Đăng ký học phần – Nhóm 18</title>
+<style>
+:root{box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);--bg:#f5f6f8;--card:#fff;--tx:#1d2330;--mut:#6b7385;--bd:#e1e4ea;--pri:#2457d6;--ok:#157f4b;--okb:#e3f5eb;--er:#b3261e;--erb:#fdeceb;--wn:#8a5a00;--wnb:#fff3d6}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#14171d;--card:#1d222b;--tx:#e8ebf1;--mut:#9aa3b5;--bd:#2d3441;--pri:#6c93ff;--ok:#5fd495;--okb:#16301f;--er:#ff8a80;--erb:#3a1c1a;--wn:#f2c25c;--wnb:#33280f}}
+:root[data-theme="dark"]{--bg:#14171d;--card:#1d222b;--tx:#e8ebf1;--mut:#9aa3b5;--bd:#2d3441;--pri:#6c93ff;--ok:#5fd495;--okb:#16301f;--er:#ff8a80;--erb:#3a1c1a;--wn:#f2c25c;--wnb:#33280f}
+*{box-sizing:border-box}html,body{margin:0}body{background:var(--bg);color:var(--tx);font:15px/1.5 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+header{display:flex;flex-wrap:wrap;gap:12px;align-items:center;justify-content:space-between;padding:12px 20px;background:var(--card);border-bottom:1px solid var(--bd);position:sticky;top:env(safe-area-inset-top,0px);z-index:5}
+h1{font-size:17px;margin:0}.sw{display:flex;border:1px solid var(--bd);border-radius:999px;overflow:hidden}
+.sw button{border:0;background:none;color:var(--mut);padding:7px 16px;cursor:pointer;font:inherit}.sw button.on{background:var(--pri);color:#fff}
+main{max-width:1000px;margin:0 auto;padding:18px}.card{background:var(--card);border:1px solid var(--bd);border-radius:12px;padding:16px;margin-bottom:16px}
+h2{font-size:15px;margin:0 0 12px}select,input{font:inherit;padding:8px 10px;border:1px solid var(--bd);border-radius:8px;background:var(--bg);color:var(--tx)}
+.row{display:flex;gap:10px;flex-wrap:wrap;align-items:center}.row input{flex:1;min-width:160px}
+.btn{background:var(--pri);color:#fff;border:0;border-radius:8px;padding:8px 14px;cursor:pointer;font:inherit}.btn:disabled{opacity:.4;cursor:not-allowed}.btn.g{background:none;color:var(--pri);border:1px solid var(--pri)}
+.sc{overflow-x:auto}table{border-collapse:collapse;width:100%;font-size:14px}th,td{text-align:left;padding:8px 10px;border-bottom:1px solid var(--bd);vertical-align:top}th{color:var(--mut);font-weight:600;font-size:12px;text-transform:uppercase}
+.tag{display:inline-block;padding:1px 8px;border-radius:999px;font-size:12px}.t-ok{background:var(--okb);color:var(--ok)}.t-er{background:var(--erb);color:var(--er)}.t-wn{background:var(--wnb);color:var(--wn)}
+#msg{padding:10px 14px;border-radius:8px;margin-bottom:16px;display:none}#msg.ok{display:block;background:var(--okb);color:var(--ok)}#msg.er{display:block;background:var(--erb);color:var(--er)}
+.mut{color:var(--mut);font-size:13px}.tt td{text-align:center;padding:4px;font-size:11px;border:1px solid var(--bd)}.tt th{text-align:center;padding:4px}.tt td.f{background:var(--pri);color:#fff}
+.hide{display:none}
+</style></head><body>
+<header><h1>🎓 Đăng ký học phần · Nhóm 18</h1>
+<div class="row"><select id="sv" aria-label="Sinh viên"></select>
+<div class="sw"><button id="bS" class="on">Sinh viên</button><button id="bA">Admin</button></div></div></header>
+<main><div id="msg"></div><div class="mut" id="conn" style="margin-bottom:10px"></div>
+<section id="vS">
+ <div class="card"><h2>Tra cứu học phần <span class="mut">(Module 1 – tìm theo tiền tố mã, sắp xếp A→Z)</span></h2>
+ <div class="row"><input id="q" placeholder="Nhập tiền tố mã học phần, vd: ENGL, MATH14, INPR…" maxlength="13"><button class="btn g" id="qc">Xóa</button></div></div>
+ <div class="card sc"><table><thead><tr><th>Mã lớp</th><th>Học phần</th><th>Lịch học</th><th>Tiên quyết</th><th>Sĩ số</th><th>Trạng thái</th><th></th></tr></thead><tbody id="cl"></tbody></table></div>
+ <div class="card"><h2>Thời khóa biểu của tôi <span class="mut">(Module 4)</span></h2><div class="sc" id="tt"></div></div>
+</section>
+<section id="vA" class="hide">
+ <div class="card"><h2>Truy xuất danh sách lớp <span class="mut">(Module 3 – định dạng MaHocPhan_SoThuTuLop, ≤ 13 ký tự)</span></h2>
+ <div class="row"><input id="cid" placeholder="vd: MATH143001_01" maxlength="20"><button class="btn" id="go">Truy xuất</button></div>
+ <div id="res" style="margin-top:14px"></div></div>
+ <div class="card sc"><h2>Tất cả lớp học phần</h2><table><thead><tr><th>Mã lớp</th><th>Học phần</th><th>Phòng</th><th>Sĩ số</th><th></th></tr></thead><tbody id="al"></tbody></table></div>
+</section></main>
+<script>
+const API=location.protocol==="file:"?"http://localhost:8080":"";
+const $=i=>document.getElementById(i),esc=s=>String(s).replace(/[&<>]/g,m=>({"&":"&amp;","<":"&lt;",">":"&gt;"}[m]));
+const api=async(p,o)=>(await fetch(API+p,o)).json();
+const post=(p,b)=>api(p,{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify(b)});
+let role="S";
+const sid=()=>$("sv").value;
+function say(t,k){const m=$("msg");m.className=k;m.textContent=t;m.scrollIntoView({block:"nearest"})}
+const KIND={enrolled:"t-ok",completed:"t-ok",ok:"t-ok",full:"t-er",prereq:"t-er",conflict:"t-wn",other:"t-wn",none:"t-wn"};
+function parseSchedule(s){const o=[];s.split(";").forEach(d=>{const i=d.indexOf(":");if(i<0)return;const t=+(d.slice(0,i).match(/\d/)||[0])[0];if(t<2||t>7)return;d.slice(i+1).split(",").forEach(r=>{const m=r.match(/(\d+)\s*->\s*(\d+)/);if(m)for(let p=+m[1];p<=+m[2];p++)o.push([t,p])})});return o}
+async function register(id){const r=await post("/api/dangky",{student_id:sid(),course_id:id});say(r.success?r.message:r.error_message,r.success?"ok":"er");render()}
+async function cancel(id){const r=await post("/api/huy",{student_id:sid(),course_id:id});say(r.success?r.message:r.error_message,r.success?"ok":"er");render()}
+async function renderStudent(){
+ const list=await api("/api/hocphan?student_id="+sid()+"&q="+encodeURIComponent($("q").value.trim()));
+ $("cl").innerHTML=list.length?list.map(c=>`<tr><td><b>${c.id}</b></td><td>${esc(c.name)}</td><td>${c.schedule}</td><td>${c.prereq.join(", ")||"—"}</td><td>${c.count}/${c.capacity}</td><td><span class="tag ${KIND[c.state]||"t-wn"}" title="${esc(c.text)}">${c.state==="conflict"?"Trùng lịch (di chuột để xem)":c.state==="prereq"?"Thiếu tiên quyết: "+esc(c.text.split(": ").pop().replace(/\.$/,"")):esc(c.text)}</span></td><td>${c.state==="enrolled"?`<button class="btn g" onclick="cancel('${c.id}')">Hủy</button>`:`<button class="btn" ${c.state==="ok"?"":"disabled"} onclick="register('${c.id}')">Đăng ký</button>`}</td></tr>`).join(""):`<tr><td colspan="7" class="mut">Không tìm thấy học phần.</td></tr>`;
+ const tk=await api("/api/tkb?student_id="+sid()),g={};
+ tk.forEach(c=>parseSchedule(c.schedule).forEach(([t,p])=>g[t+"-"+p]=c.id.slice(0,4)));
+ let h="<table class='tt'><tr><th>Tiết</th>"+[2,3,4,5,6,7].map(d=>`<th>Thứ ${d}</th>`).join("")+"</tr>";
+ for(let p=1;p<=11;p++)h+=`<tr><th>${p}</th>`+[2,3,4,5,6,7].map(d=>g[d+"-"+p]?`<td class="f">${g[d+"-"+p]}</td>`:"<td></td>").join("")+"</tr>";
+ $("tt").innerHTML=h+"</table>"}
+async function lookup(id){
+ id=id.trim();$("cid").value=id;const r=$("res"),d=await api("/api/truyxuatlop?id="+encodeURIComponent(id));
+ if(!d.ok){r.innerHTML=`<div class="tag t-er">${esc(d.error)}</div>`;return}
+ const rows=d.students.map((s,n)=>`<tr><td>${n+1}</td><td>${s.id}</td><td>${esc(s.name)}</td></tr>`).join("");
+ r.innerHTML=`<b>DANH SÁCH SINH VIÊN LỚP: ${d.class_id}</b> – ${esc(d.name)} · Phòng ${esc(d.room)} · ${d.count}/${d.capacity}`+(rows?`<table style="margin-top:8px"><thead><tr><th>#</th><th>MSSV</th><th>Họ tên</th></tr></thead><tbody>${rows}</tbody></table>`:`<p class="mut">(Lớp học hiện chưa có sinh viên nào đăng ký)</p>`)}
+async function renderAdmin(){const a=await api("/api/truyxuatlop");$("al").innerHTML=a.map(c=>`<tr><td><b>${c.class_id}</b></td><td>${esc(c.name)}</td><td>${esc(c.room)}</td><td>${c.count}/${c.capacity}</td><td><button class="btn g" onclick="lookup('${c.class_id}')">Xem DS</button></td></tr>`).join("")}
+async function render(){try{await(role==="S"?renderStudent():renderAdmin());$("conn").textContent="🟢 Đã kết nối backend C++ ("+(API||location.origin)+")"}catch(e){$("conn").textContent="";say("Không kết nối được backend C++. Hãy chạy server (./server) rồi mở http://localhost:8080","er")}}
+function setRole(r){role=r;$("bS").classList.toggle("on",r==="S");$("bA").classList.toggle("on",r==="A");$("vS").classList.toggle("hide",r!=="S");$("vA").classList.toggle("hide",r!=="A");$("sv").classList.toggle("hide",r!=="S");$("msg").className="";render()}
+(async()=>{try{const s=await api("/api/sinhvien");$("sv").innerHTML=s.map(x=>`<option value="${x.id}">${x.id} – ${esc(x.name)}</option>`).join("")}catch(e){}render()})();
+$("sv").onchange=()=>{$("msg").className="";render()};$("q").oninput=render;$("qc").onclick=()=>{$("q").value="";render()};
+$("bS").onclick=()=>setRole("S");$("bA").onclick=()=>setRole("A");$("go").onclick=()=>lookup($("cid").value);$("cid").onkeydown=e=>{if(e.key==="Enter")lookup($("cid").value)};
+</script></body></html>

@@ -37,6 +37,7 @@ class Course {
             //Học phần tiên quyết đang ở dạng string, tức là mã học phần, khi làm nhớ
             //Lấy học phần dựa vào id, có sẵn DIYVector
         void addPrerequisiteCourseId (string course) { prerequisiteCourses.push_back(course); }
+        const DIYVector<string>& getPrerequisiteCourses() const { return prerequisiteCourses; }
 };
 
 class Student {
@@ -62,6 +63,12 @@ class Student {
 
         void addAttendingCourse(Course course) { attendingCourse.push_back(course); }
         void addCompletedCourseId(const string& courseId) { completedCourseId.insert(courseId); }
+        void removeAttendingCourse(const string& courseId) {
+            DIYVector<Course> keep;
+            for (unsigned int i = 0; i < attendingCourse.size(); i++)
+                if (attendingCourse[i].getCourseId() != courseId) keep.push_back(attendingCourse[i]);
+            attendingCourse = keep;
+        }
     };
 
 class Classroom {
@@ -86,6 +93,13 @@ class Classroom {
         string getClassName() const { return className; }
         const DIYVector<Student> getStudentList() { return studentList; }
         void addStudent(const Student& sv) { studentList.push_back(sv); }
+        int getCapacity() const { return capacity; }
+        void removeStudent(const string& studentId) {
+            DIYVector<Student> keep;
+            for (unsigned int i = 0; i < studentList.size(); i++)
+                if (studentList[i].getStudentId() != studentId) keep.push_back(studentList[i]);
+            studentList = keep;
+        }
 };
 
 
