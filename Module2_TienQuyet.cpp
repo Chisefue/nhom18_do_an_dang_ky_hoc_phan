@@ -31,7 +31,3 @@ PrereqResult PrerequisiteService::checkEligibility(const string& courseCode, con
 }
 
 
-int main() {
-    cout << 0;
-    return 0;
-}
